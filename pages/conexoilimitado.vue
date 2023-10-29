@@ -1,41 +1,4 @@
 <template>
-  <main class="h-screen bg-gray-200 overflow-auto">
-    <div class="flex flex-col mx-auto items-center mt-60">
-      <img src="/logo.png" alt="conexo log" class="w-[50px] h-[50px]" />
-      <h1 class="mt-5 text-2xl font-extrabold">CONEXO</h1>
-      <p class="px-5 my-5 mx-0 text-center" style="max-width: 300px">
-        Forme 4 grupos de 4 palavras que tenham algo em comum
-      </p>
-      <div>
-        <div
-          class="my-5 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg items-center"
-        >
-          <div class="pl-1 text-lg font-extrabold">Jogo diário</div>
-          <div class="font-normal">{{ today }}</div>
-          <a class="cursor-pointer" href="#daily"
-            ><button
-              class="items-center bg-sky-500 px-5 py-2 text-center text-base rounded-lg"
-            >
-              Jogar
-            </button>
-          </a>
-        </div>
-        <div
-          class="my-5 flex border border-white bg-slate-800 p-2 text-white rounded-lg items-center justify-between"
-        >
-          <div class="pl-1 text-lg font-extrabold">Jogo Ilimitado</div>
-          <NuxtLink to="/conexoilimitado" class="cursor-pointer"
-            ><button
-              class="items-center bg-sky-500 px-5 py-2 text-center text-base rounded-lg"
-            >
-              Jogar
-            </button>
-          </NuxtLink>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!--  游戏区 -->
   <div class="h-screen bg-slate-900 overflow-auto" id="daily">
     <div
       class="flex w-full sm:max-w-[520px] px-4 mx-auto text-white items-center justify-between"
@@ -45,7 +8,7 @@
         icon="circle-question"
         class="text-xl cursor-pointer hover:text-gray-400"
       />
-      <h2 class="text-3xl">Conexo Jogo</h2>
+      <h1 class="text-3xl">Conexo Ilimitado</h1>
       <font-awesome-icon
         icon="plus"
         class="text-xl cursor-pointer hover:text-gray-400"
@@ -89,7 +52,7 @@
       ref="cells"
     >
       <div class="flex w-full">
-        <p class="text-semibold p-2 mr-2">{{ today }}</p>
+        <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p>
         <p class="text-semibold p-2">
           TENTATIVAS: {{ localData.attempts.length }}
         </p>
@@ -127,7 +90,7 @@
 import { ref, reactive, onMounted, watch } from "vue";
 import "animate.css";
 import autoAnimate from "@formkit/auto-animate";
-const data = useData(); // 获取composable中的游戏数据
+const data = useUnlimitedData(); // 获取composable中的游戏数据
 
 // 用于info弹出框
 const isOpen = ref(false);
@@ -146,10 +109,9 @@ onMounted(() => {
   });
 });
 
-const [year, month, day] = getDate();
-const today = ref(day + "/" + month + "/" + year);
 const selectedWords = [];
 const selectedTarget = [];
+const randomNumber = Math.floor(Math.random() * (Object.keys(data).length + 1));
 
 const groupColor = ref({
   1: "bg-red-500",
@@ -165,42 +127,15 @@ const localData = reactive({
   status: "selecting",
 });
 
-watch(localData, (newVal) => {
-  if (process.client) {
-    localStorage.setItem(
-      "gameDatas",
-      JSON.stringify({
-        [day]: newVal,
-      })
-    );
+// 初始化数据，该函数立即执行
+(() => {
+  for (let i = 0; i < data[randomNumber].startingBoard.length; i++) {
+    localData.items.push({
+      id: i,
+      word: data[randomNumber].startingBoard[i],
+    });
   }
-});
-
-function initData() {
-  const dayNumber = Number(day);
-  let gameDataObj = null;
-
-  if (process.client) {
-    gameDataObj = JSON.parse(localStorage.getItem("gameDatas"));
-  }
-  
-  if (gameDataObj && gameDataObj[day] !== undefined) {
-    gameDataObj = gameDataObj[day];
-    for (const key in gameDataObj) {
-      if (gameDataObj.hasOwnProperty(key) && localData.hasOwnProperty(key)) {
-        localData[key] = gameDataObj[key];
-      }
-    }
-  } else {
-    for (let i = 0; i < data[dayNumber - 1].startingBoard.length; i++) {
-      localData.items.push({
-        id: i,
-        word: data[dayNumber - 1].startingBoard[i],
-      });
-    }
-  }
-}
-initData();
+})();
 
 function clickCell(item, target) {
   if (selectedWords.includes(item.word)) {
@@ -214,7 +149,7 @@ function clickCell(item, target) {
     let isCorrect = false;
     let tempGroup = null;
 
-    for (let group of data[Number(day - 1)].groups) {
+    for (let group of data[randomNumber].groups) {
       if (selectedWords.every((item) => group.words.includes(item))) {
         tempGroup = group;
         isCorrect = true;
@@ -294,52 +229,46 @@ function incorrectSet() {
   }
 }
 
-function getDate() {
-  const today = new Date();
-  const year = today.getFullYear();
-  const month = today.getMonth() + 1; // 加 1 以得到通常的月份数字
-  const day = today.getDate();
-  return [year, month, day];
-}
-
 const generatorResultText = () => {
   const colorText = [];
-  for(const attempt of localData.attempts) {
-    if(attempt['group'] === undefined) {
-      colorText.push('❌');
-    } else if(attempt['group'] === 1) {
-      colorText.push('🔴');
-    }else if(attempt['group'] === 2) {
-      colorText.push('🟢');
-    }else if(attempt['group'] === 3) {
-      colorText.push('🟠');
-    }else if(attempt['group'] === 4) {
-      colorText.push('🔵');
+  for (const attempt of localData.attempts) {
+    if (attempt["group"] === undefined) {
+      colorText.push("❌");
+    } else if (attempt["group"] === 1) {
+      colorText.push("🔴");
+    } else if (attempt["group"] === 2) {
+      colorText.push("🟢");
+    } else if (attempt["group"] === 3) {
+      colorText.push("🟠");
+    } else if (attempt["group"] === 4) {
+      colorText.push("🔵");
     }
   }
 
-  const infoText = `Joguei conexojogo.com ${today.value} e consegui em ${localData.attempts.length} tentativas.`;
+  const infoText = `Conexo Ilimitado! Joguei conexojogo.com e consegui em ${localData.attempts.length} tentativas.`;
   return {
-    colorText: colorText.join(''),
-    infoText
+    colorText: colorText.join(""),
+    infoText,
   };
-}
+};
 
 async function copyToClipboard(target) {
-  target.innerText = 'Copiado!';
+  target.innerText = "Copiado!";
   setTimeout(() => {
-    target.innerText = 'Compartilhe';
+    target.innerText = "Compartilhe";
   }, 2000);
   const text = generatorResultText();
   try {
-    await navigator.clipboard.writeText(`${text.infoText}\n\n${text.colorText}`);
+    await navigator.clipboard.writeText(
+      `${text.infoText}\n\n${text.colorText}`
+    );
   } catch (err) {
     console.error("Error in copy: ", err);
   }
 }
 
 useHead({
-  title: "Conexo Jogo - Forme 4 grupos de 4 palavras que tenham algo em comum",
+  title: "Conexo Jogo Ilimitado - Forme 4 grupos de 4 palavras que tenham algo em comum",
   meta: [
     {
       name: "description",
@@ -350,7 +279,7 @@ useHead({
   link: [
     {
       rel: "canonical",
-      href: "https://conexojogo.com",
+      href: "https://conexojogo.com/conexoilimitado",
     },
     {
       rel: "icon",
