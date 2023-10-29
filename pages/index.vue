@@ -147,6 +147,7 @@ onMounted(() => {
 
 const [year, month, day] = getDate();
 const today = ref(day + "/" + month + "/" + year);
+const selectedWords = [];
 const selectedTarget = [];
 
 const groupColor = ref({
@@ -160,7 +161,6 @@ const localData = reactive({
   attempts: [],
   groups: [],
   items: [],
-  selected: [],
   status: "selecting",
 });
 
@@ -204,15 +204,15 @@ initData();
 
 function clickCell(item, target) {
   target.className = "cell-selected";
-  localData.selected.push(item.word);
+  selectedWords.push(item.word);
   selectedTarget.push(target);
 
-  if (localData.selected.length === 4) {
+  if (selectedWords.length === 4) {
     let isCorrect = false;
     let tempGroup = null;
 
     for (let group of data[Number(day - 1)].groups) {
-      if (localData.selected.every((item) => group.words.includes(item))) {
+      if (selectedWords.every((item) => group.words.includes(item))) {
         tempGroup = group;
         isCorrect = true;
         break;
@@ -220,7 +220,7 @@ function clickCell(item, target) {
     }
 
     const attemptObj = {
-      selected: Array.from(localData.selected),
+      selected: Array.from(selectedWords),
     };
 
     if (isCorrect) {
@@ -231,7 +231,7 @@ function clickCell(item, target) {
     }
 
     localData.attempts.push(attemptObj);
-    localData.selected.length = 0;
+    selectedWords.length = 0;
     selectedTarget.length = 0;
   }
 }
@@ -297,12 +297,12 @@ function getDate() {
 }
 
 useHead({
-  title: "Conexo Jogo - Conexão de Termos em Português, Forme 4 grupos de 4 palavras que tenham algo em comum",
+  title: "Conexo Jogo - Forme 4 grupos de 4 palavras que tenham algo em comum",
   meta: [
     {
       name: "description",
       content:
-        "uma versão em português, similar ao Wordle e sem fim, do popular jogo de Conexões do New York Times. Melhore seu vocabulário e divirta-se de forma ilimitada encontrando grupos de palavras.",
+        "uma versão em português, similar ao Wordle e sem fim, do popular jogo de Conexões do New York Times.",
     },
   ],
   link: [
