@@ -49,7 +49,6 @@
       <font-awesome-icon
         icon="plus"
         class="text-xl cursor-pointer hover:text-gray-400"
-        @click="copyToClipboard"
       />
     </div>
 
@@ -61,9 +60,10 @@
         <p class="my-2 font-extrabold">
           Você conseguiu em {{ localData.attempts.length }} tentativas.
         </p>
-        <p class="mt-5 mb-8">❌🟧❌❌🟩🟪🟦</p>
+        <p class="mt-5 mb-8">{{ generatorResultText().colorText }}</p>
         <button
           class="flex items-center py-2 px-5 text-base cursor-pointer bg-sky-500 rounded-lg hover:bg-sky-400"
+          @click="copyToClipboard($event.target)"
         >
           <font-awesome-icon icon="copy" />
           <span class="ml-2">Compartilhe</span>
@@ -302,9 +302,37 @@ function getDate() {
   return [year, month, day];
 }
 
-async function copyToClipboard() {
+const generatorResultText = () => {
+  const colorText = [];
+  for(const attempt of localData.attempts) {
+    if(attempt['group'] === undefined) {
+      colorText.push('❌');
+    } else if(attempt['group'] === 1) {
+      colorText.push('🔴');
+    }else if(attempt['group'] === 2) {
+      colorText.push('🟢');
+    }else if(attempt['group'] === 3) {
+      colorText.push('🟠');
+    }else if(attempt['group'] === 4) {
+      colorText.push('🔵');
+    }
+  }
+
+  const infoText = `Joguei conexojogo.com ${today.value} e consegui em ${localData.attempts.length} tentativas.`;
+  return {
+    colorText: colorText.join(''),
+    infoText
+  };
+}
+
+async function copyToClipboard(target) {
+  target.innerText = 'Copiado!';
+  setTimeout(() => {
+    target.innerText = 'Compartilhe';
+  }, 2000);
+  const text = generatorResultText();
   try {
-    await navigator.clipboard.writeText("Text to copy");
+    await navigator.clipboard.writeText(`${text.infoText}\n\n${text.colorText}`);
   } catch (err) {
     console.error("Error in copy: ", err);
   }
@@ -341,15 +369,15 @@ useHead({
   @apply py-6 bg-sky-500 text-center rounded-lg uppercase;
 }
 .cell-1-color {
-  @apply py-6 bg-sky-500 text-center rounded-lg uppercase;
+  @apply py-6 bg-red-500 text-center rounded-lg uppercase;
 }
 .cell-2-color {
-  @apply py-6 bg-rose-500 text-center rounded-lg uppercase;
+  @apply py-6 bg-green-500 text-center rounded-lg uppercase;
 }
 .cell-3-color {
-  @apply py-6 bg-lime-500 text-center rounded-lg uppercase;
+  @apply py-6 bg-orange-500 text-center rounded-lg uppercase;
 }
 .cell-4-color {
-  @apply py-6 bg-violet-500 text-center rounded-lg uppercase;
+  @apply py-6 bg-blue-500 text-center rounded-lg uppercase;
 }
 </style>
