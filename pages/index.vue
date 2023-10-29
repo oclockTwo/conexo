@@ -36,7 +36,7 @@
     </div>
   </main>
   <!--  游戏区 -->
-  <div class="h-screen bg-slate-900 overflow-auto" id="gameArea">
+  <div class="h-screen bg-slate-900 overflow-auto" id="daily">
     <div
       class="flex w-full sm:max-w-[520px] px-4 mx-auto text-white items-center justify-between"
     >
@@ -49,6 +49,7 @@
       <font-awesome-icon
         icon="plus"
         class="text-xl cursor-pointer hover:text-gray-400"
+        @click="copyToClipboard"
       />
     </div>
 
@@ -177,18 +178,17 @@ watch(localData, (newVal) => {
 
 function initData() {
   const dayNumber = Number(day);
-  let gameDatas = null;
+  let gameDataObj = null;
 
   if (process.client) {
-    gameDatas = localStorage.getItem("gameDatas");
+    gameDataObj = JSON.parse(localStorage.getItem("gameDatas"));
   }
-
-  if (gameDatas) {
-    let gameDatasObj = JSON.parse(gameDatas);
-    gameDatasObj = gameDatasObj[dayNumber];
-    for (const key in gameDatasObj) {
-      if (gameDatasObj.hasOwnProperty(key) && localData.hasOwnProperty(key)) {
-        localData[key] = gameDatasObj[key];
+  
+  if (gameDataObj && gameDataObj[day] !== undefined) {
+    gameDataObj = gameDataObj[day];
+    for (const key in gameDataObj) {
+      if (gameDataObj.hasOwnProperty(key) && localData.hasOwnProperty(key)) {
+        localData[key] = gameDataObj[key];
       }
     }
   } else {
@@ -300,6 +300,14 @@ function getDate() {
   const month = today.getMonth() + 1; // 加 1 以得到通常的月份数字
   const day = today.getDate();
   return [year, month, day];
+}
+
+async function copyToClipboard() {
+  try {
+    await navigator.clipboard.writeText("Text to copy");
+  } catch (err) {
+    console.error("Error in copy: ", err);
+  }
 }
 
 useHead({
