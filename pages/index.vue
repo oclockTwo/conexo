@@ -151,10 +151,10 @@ const selectedWords = [];
 const selectedTarget = [];
 
 const groupColor = ref({
-  1: "bg-sky-500",
-  2: "bg-rose-500",
-  3: "bg-lime-500",
-  4: "bg-violet-500",
+  1: "bg-red-500",
+  2: "bg-green-500",
+  3: "bg-orange-500",
+  4: "bg-blue-500",
 });
 
 const localData = reactive({
@@ -203,6 +203,9 @@ function initData() {
 initData();
 
 function clickCell(item, target) {
+  if (selectedWords.includes(item.word)) {
+    return;
+  }
   target.className = "cell-selected";
   selectedWords.push(item.word);
   selectedTarget.push(target);
@@ -249,7 +252,7 @@ function correctSet(tempGroup, selected) {
     });
   }
 
-  // 从items中删除selected
+  // 从items中删除selected，之所以要settimeout，是因为要等动画结束
   setTimeout(() => {
     for (let word of selected) {
       for (let item of localData.items) {
@@ -260,10 +263,13 @@ function correctSet(tempGroup, selected) {
       }
     }
     localData.groups.push(tempGroup);
+  }, 800);
+
+  setTimeout(() => {
     if (localData.groups.length === 4) {
       localData.status = "won";
     }
-  }, 800);
+  }, 2000);
 }
 
 function incorrectSet() {
@@ -314,7 +320,7 @@ useHead({
       rel: "icon",
       href: "/favicon.ico",
       type: "image/x-icon",
-    }
+    },
   ],
 });
 </script>
