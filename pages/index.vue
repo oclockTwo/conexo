@@ -12,7 +12,7 @@
         >
           <div class="pl-1 text-lg font-extrabold">Jogo diário</div>
           <div class="font-normal">{{ today }}</div>
-          <a class="cursor-pointer" href="#gameArea"
+          <a class="cursor-pointer" href="#daily"
             ><button
               class="items-center bg-sky-500 px-5 py-2 text-center text-base rounded-lg"
             >
