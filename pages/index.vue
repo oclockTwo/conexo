@@ -363,10 +363,10 @@ useHead({
 
 <style scoped>
 .cell-normal {
-  @apply py-6 bg-slate-700 text-center rounded-lg hover:bg-slate-600 cursor-pointer uppercase;
+  @apply py-6 bg-slate-700 text-center rounded-lg hover:bg-slate-600 cursor-pointer uppercase overflow-auto;
 }
 .cell-selected {
-  @apply py-6 bg-sky-500 text-center rounded-lg uppercase;
+  @apply py-6 bg-sky-500 text-center rounded-lg uppercase overflow-auto;
 }
 .cell-1-color {
   @apply py-6 bg-red-500 text-center rounded-lg uppercase;
