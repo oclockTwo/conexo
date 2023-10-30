@@ -45,7 +45,7 @@
         icon="circle-question"
         class="text-xl cursor-pointer hover:text-gray-400"
       />
-      <h2 class="text-3xl">Conexo Jogo</h2>
+      <h2 class="text-3xl font-bold mt-2">CONEXO</h2>
       <font-awesome-icon
         icon="plus"
         class="text-xl cursor-pointer hover:text-gray-400"
@@ -121,6 +121,219 @@
 
   <!-- 引入info弹出框 -->
   <Dialog :isOpen="isOpen" @closeModal="isOpen = false" />
+
+  <!-- 文字区  -->
+  <section class="bg-stone-200 leading-6 text-black w-full">
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">Conexo Jogo</h2>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        Conexo é um popular jogo de quebra-cabeça de associação de palavras onde
+        os jogadores recebem uma série de quatro palavras e devem identificar
+        uma palavra que pode ser conectada a todas as quatro palavras dadas de
+        alguma forma. O objetivo é encontrar o tema comum ou a relação entre as
+        palavras e chegar à resposta correta.
+      </p>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        Ao jogar Conexo Jogo, seu objetivo é selecionar quatro palavras que
+        estejam relacionadas de alguma maneira. O jogo então verificará se suas
+        palavras escolhidas estão corretas e as categorizará em diferentes
+        grupos representados por diferentes cores: Vermelho, Verde, Laranja e
+        Azul. Cada categoria de cor representa um grupo de palavras
+        relacionadas.
+      </p>
+    </div>
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center rounded-xl shadow-xl my-5"
+    >
+      <div>
+        <h2 class="text-3xl font-extrabold mb-2">Como jogar o Conexo Jogo</h2>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          1
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">Leia e Entenda</h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Comece lendo cuidadosamente as palavras dadas no quebra-cabeça.
+          Entenda seus significados e contexto.
+        </p>
+        <img
+          src="/images/1.png"
+          alt="Conexo 1"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          2
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Encontre 4 grupos de quatro palavras que compartilham algo em comum
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Procure por padrões e conexões entre as palavras para formar os 4
+          grupos de 4 palavras cada. Cada grupo deve ter um tema comum com
+          quatro palavras relacionadas.
+        </p>
+        <img
+          src="/images/2.png"
+          alt="Conexo 2"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          3
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Selecione 4 Palavras
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Selecione um conjunto de quatro palavras. Veja se sua resposta
+          corresponde à solução correta. Aproveite o desafio e a emoção do jogo!
+        </p>
+        <img
+          src="/images/3.png"
+          alt="Conexo 3"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          4
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Compartilhar e Feedback
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Clique no botão de copiar para copiar sua pontuação final, e então
+          compartilhe nas suas redes sociais para que mais pessoas saibam da sua
+          alegria. Você também pode enviar suas sugestões sobre este jogo para
+          nós, para que possamos continuar a melhorar.
+        </p>
+        <img
+          src="/images/4.png"
+          alt="Conexo 4"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+    </div>
+    <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg my-5">
+      <h2 class="text-3xl font-extrabold mb-2 text-center my-4">
+        FAQs sobre Conexo
+      </h2>
+      <div class="shadow-xl bg-white rounded-lg p-4 my-4">
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          O que é Conexo Jogo?
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          O Conexo Jogo é um popular jogo de quebra-cabeça de associação de
+          palavras que desafia os jogadores a encontrar uma palavra que conecta
+          quatro palavras dadas de alguma forma. Ele testa sua habilidade de
+          encontrar um tema comum entre diferentes tipos de palavras.<br />
+          <br />
+          <strong>Por exemplo</strong>, se as quatro palavras dadas são Árvore,
+          Carvalho, Ácer e Bétula, o fio comum poderia ser Tipos de Árvores.
+        </p>
+      </div>
+      <div class="shadow-xl bg-white rounded-lg p-4 my-4">
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Quais são os 4 Grupos no Conexo Jogo?
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          No Conexo Jogo, existem quatro categorias codificadas por cores
+          indicando níveis de dificuldade:<br />
+          <br />
+          <strong>Quatro Grupos:</strong><br />
+          <br />
+          <strong>Vermelho (Mais fácil):</strong> Dicas simples que são diretas
+          para conectar com a palavra alvo.<br />
+          <strong>Verde (Segundo mais fácil): </strong>Dicas um pouco mais
+          desafiadoras, mas ainda gerenciáveis para a maioria dos jogadores.<br />
+          <strong>Laranja (Médio): </strong>Dicas de dificuldade moderada que
+          requerem mais pensamento e criatividade.<br />
+          <strong>Azul (Difícil):</strong> A categoria mais desafiadora com
+          dicas complexas que exigem raciocínio profundo e fortes habilidades de
+          associação de palavras.<br />
+          <br />
+          Essas categorias oferecem uma progressão de dificuldade, permitindo
+          que os jogadores testem e melhorem suas habilidades de associação de
+          palavras.
+        </p>
+      </div>
+      <div class="shadow-xl bg-white rounded-lg p-4 my-4">
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Quais são as regras do jogo Wordle Connections?
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Aqui estão as regras do jogo Connections Wordle explicadas de uma
+          maneira simples de entender:<br />
+          <br />
+          <strong>1. Olhe as Palavras: </strong> No jogo, você verá quatro
+          palavras. para conectar com a palavra alvo.<br />
+          <strong>2. Encontre a Coisa Comum: </strong>Sua tarefa é encontrar uma
+          palavra que conecte todas as quatro palavras dadas. É como encontrar
+          algo que todas tenham em comum.<br />
+          <strong>3. Dê Sua Resposta: </strong>Quando você acha que sabe a
+          palavra de conexão, você pode compartilhar sua resposta.<br />
+          Você tem quatro tentativas para adivinhar a palavra certa. Se não
+          conseguir encontrar em quatro tentativas, o jogo terminará.<br />
+          <br />
+          Lembre-se, o objetivo é se divertir e fazer o seu melhor para
+          encontrar a conexão entre as palavras. Divirta-se jogando o jogo
+          Connections!
+        </p>
+      </div>
+      <div class="shadow-xl bg-white rounded-lg p-4 my-4">
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          As principais diferenças entre conexo ws?
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          conexo ws é um jogo de associação de palavras que se concentra em
+          encontrar conexões entre palavras dadas, enquanto termo é um jogo de
+          adivinhação de palavras onde os jogadores tentam adivinhar uma palavra
+          oculta com base no feedback. O ponto comum entre conexo ws e conexo é
+          que ambos são jogos de palavras.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <div class="mx-auto px-4 leading-7 text-black">
+      <div class="flex items-center justify-center text-black">
+        <div class="text-xs font-normal leading-3 text-slate-800">
+          conexojogo.com © 2023
+        </div>
+        <ul
+          class="flex flex-col items-centertext-xs font-normal leading-3 text-slate-800"
+        >
+          <li
+            class="ml-2 flex items-end border-l border-solid border-slate-500 pl-2 text-center"
+          >
+            <a href="/" class="cursor-pointer">Home </a>
+            <a href="/conexoilimitado" class="cursor-pointer ml-2"
+              >| Conexo Ilimitado
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="mx-auto mb-2 mt-5 text-center text-xs leading-6 text-gray-400"
+      >
+        conexojogo.com is not affiliated with any other games in any way
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script setup>
@@ -183,7 +396,7 @@ function initData() {
   if (process.client) {
     gameDataObj = JSON.parse(localStorage.getItem("gameDatas"));
   }
-  
+
   if (gameDataObj && gameDataObj[day] !== undefined) {
     gameDataObj = gameDataObj[day];
     for (const key in gameDataObj) {
@@ -304,35 +517,37 @@ function getDate() {
 
 const generatorResultText = () => {
   const colorText = [];
-  for(const attempt of localData.attempts) {
-    if(attempt['group'] === undefined) {
-      colorText.push('❌');
-    } else if(attempt['group'] === 1) {
-      colorText.push('🔴');
-    }else if(attempt['group'] === 2) {
-      colorText.push('🟢');
-    }else if(attempt['group'] === 3) {
-      colorText.push('🟠');
-    }else if(attempt['group'] === 4) {
-      colorText.push('🔵');
+  for (const attempt of localData.attempts) {
+    if (attempt["group"] === undefined) {
+      colorText.push("❌");
+    } else if (attempt["group"] === 1) {
+      colorText.push("🔴");
+    } else if (attempt["group"] === 2) {
+      colorText.push("🟢");
+    } else if (attempt["group"] === 3) {
+      colorText.push("🟠");
+    } else if (attempt["group"] === 4) {
+      colorText.push("🔵");
     }
   }
 
   const infoText = `Joguei conexojogo.com ${today.value} e consegui em ${localData.attempts.length} tentativas.`;
   return {
-    colorText: colorText.join(''),
-    infoText
+    colorText: colorText.join(""),
+    infoText,
   };
-}
+};
 
 async function copyToClipboard(target) {
-  target.innerText = 'Copiado!';
+  target.innerText = "Copiado!";
   setTimeout(() => {
-    target.innerText = 'Compartilhe';
+    target.innerText = "Compartilhe";
   }, 2000);
   const text = generatorResultText();
   try {
-    await navigator.clipboard.writeText(`${text.infoText}\n\n${text.colorText}`);
+    await navigator.clipboard.writeText(
+      `${text.infoText}\n\n${text.colorText}`
+    );
   } catch (err) {
     console.error("Error in copy: ", err);
   }
