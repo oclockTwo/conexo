@@ -123,7 +123,7 @@
   <Dialog :isOpen="isOpen" @closeModal="isOpen = false" />
 
   <!-- 文字区  -->
-  <section class="bg-stone-200 leading-6 text-black w-full  overflow-auto">
+  <section class="bg-stone-200 leading-6 text-black w-full overflow-auto">
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
     >
@@ -254,8 +254,8 @@
           <br />
           <strong>Quatro Grupos:</strong><br />
           <br />
-          <strong>🔴 Vermelho (Mais fácil):</strong> Dicas simples que são diretas
-          para conectar com a palavra alvo.<br />
+          <strong>🔴 Vermelho (Mais fácil):</strong> Dicas simples que são
+          diretas para conectar com a palavra alvo.<br />
           <strong>🟢 Verde (Segundo mais fácil): </strong>Dicas um pouco mais
           desafiadoras, mas ainda gerenciáveis para a maioria dos jogadores.<br />
           <strong>🟠 Laranja (Médio): </strong>Dicas de dificuldade moderada que
@@ -546,6 +546,21 @@ useHead({
       rel: "icon",
       href: "/favicon.ico",
       type: "image/x-icon",
+    },
+  ],
+  script: [
+    {
+      async: true,
+      src: "https://www.googletagmanager.com/gtag/js?id=G-DD1SKK8SCF",
+    },
+    {
+      children: `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DD1SKK8SCF');
+      `,
     },
   ],
 });

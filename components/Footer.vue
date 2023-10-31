@@ -1,5 +1,4 @@
 <template>
-  <!-- 页脚 -->
   <footer class="mt-4">
     <div class="mx-auto px-4 leading-7 text-black">
       <div class="flex items-center justify-center text-black">
