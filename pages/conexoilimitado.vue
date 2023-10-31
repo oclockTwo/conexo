@@ -263,7 +263,7 @@ async function copyToClipboard(target) {
   const text = generatorResultText();
   try {
     await navigator.clipboard.writeText(
-      `${text.infoText}\n\n${text.colorText}`
+      `${text.infoText}\n${text.colorText}`
     );
   } catch (err) {
     console.error("Error in copy: ", err);
