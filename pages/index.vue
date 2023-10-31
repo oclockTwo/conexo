@@ -127,7 +127,7 @@
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
     >
-      <h2 class="text-3xl font-extrabold mb-2">Introdução ao Jogo Conexo</h2>
+      <h2 class="text-3xl font-extrabold mb-2">Conexo Hoje</h2>
       <p class="mb-2 text-base font-normal text-gray-800">
         Conexo é um popular jogo de quebra-cabeça de associação de palavras onde
         os jogadores recebem uma série de quatro palavras e devem identificar
@@ -228,7 +228,7 @@
     </div>
     <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg my-5">
       <h2 class="text-3xl font-extrabold mb-2 text-center my-4">
-        FAQs sobre Conexo
+        FAQs sobre Jogo Conexo
       </h2>
       <div class="shadow-xl bg-white rounded-lg p-4 my-4">
         <h3 class="mb-2 text-xl font-bold text-gray-800">
@@ -271,7 +271,7 @@
       </div>
       <div class="shadow-xl bg-white rounded-lg p-4 my-4">
         <h3 class="mb-2 text-xl font-bold text-gray-800">
-          Quais são as regras do jogo Wordle Connections?
+          Quais são as regras do jogo conexo?
         </h3>
         <p class="mb-2 text-base font-normal text-gray-800">
           Aqui estão as regras do jogo Connections Wordle explicadas de uma

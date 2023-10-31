@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-slate-900 overflow-auto" id="daily">
+  <div class="h-screen bg-slate-900 overflow-auto">
     <div
       class="flex w-full sm:max-w-[520px] px-4 mx-auto text-white items-center justify-between"
     >
