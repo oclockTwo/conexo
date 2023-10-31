@@ -168,7 +168,7 @@ const data = {
     ],
   },
   // 这里有问题
-  0: {
+  4: {
     groups: [
       {
         number: 1,
@@ -210,7 +210,7 @@ const data = {
       "pix",
     ],
   },
-  1: {
+  5: {
     groups: [
       {
         number: 1,
@@ -252,7 +252,7 @@ const data = {
       "canoagem",
     ],
   },
-  2: {
+  6: {
     groups: [
       {
         number: 1,
@@ -294,7 +294,7 @@ const data = {
       "cálice",
     ],
   },
-  3: {
+  7: {
     groups: [
       {
         number: 1,
@@ -336,7 +336,7 @@ const data = {
       "casca",
     ],
   },
-  4: {
+  8: {
     groups: [
       {
         number: 1,
@@ -378,7 +378,7 @@ const data = {
       "quarto",
     ],
   },
-  5: {
+  9: {
     groups: [
       {
         number: 1,
@@ -420,7 +420,7 @@ const data = {
       "bexiga",
     ],
   },
-  6: {
+  10: {
     groups: [
       {
         number: 1,
@@ -462,7 +462,7 @@ const data = {
       "volve",
     ],
   },
-  7: {
+  11: {
     groups: [
       {
         number: 1,
@@ -504,7 +504,7 @@ const data = {
       "cama",
     ],
   },
-  8: {
+  12: {
     groups: [
       {
         number: 1,
@@ -546,7 +546,7 @@ const data = {
       "caixão",
     ],
   },
-  9: {
+  13: {
     groups: [
       {
         number: 1,
@@ -588,7 +588,7 @@ const data = {
       "larva",
     ],
   },
-  10: {
+  14: {
     groups: [
       {
         number: 1,
@@ -630,7 +630,7 @@ const data = {
       "reta",
     ],
   },
-  11: {
+  15: {
     groups: [
       {
         number: 1,
@@ -672,7 +672,7 @@ const data = {
       "c",
     ],
   },
-  12: {
+  16: {
     groups: [
       {
         number: 1,
@@ -714,7 +714,7 @@ const data = {
       "água",
     ],
   },
-  13: {
+  17: {
     groups: [
       {
         number: 1,
@@ -756,7 +756,7 @@ const data = {
       "ombro",
     ],
   },
-  14: {
+  18: {
     groups: [
       {
         number: 1,
@@ -798,7 +798,7 @@ const data = {
       "público",
     ],
   },
-  15: {
+  19: {
     groups: [
       {
         number: 1,
@@ -840,7 +840,7 @@ const data = {
       "zap",
     ],
   },
-  16: {
+  20: {
     groups: [
       {
         number: 1,
@@ -882,7 +882,7 @@ const data = {
       "posto",
     ],
   },
-  17: {
+  21: {
     groups: [
       {
         number: 1,
@@ -924,7 +924,7 @@ const data = {
       "cabo",
     ],
   },
-  18: {
+  22: {
     groups: [
       {
         number: 1,
@@ -966,7 +966,7 @@ const data = {
       "melodia",
     ],
   },
-  19: {
+  23: {
     groups: [
       {
         number: 1,
@@ -1008,7 +1008,7 @@ const data = {
       "elétrico",
     ],
   },
-  20: {
+  24: {
     groups: [
       {
         number: 1,
@@ -1050,7 +1050,7 @@ const data = {
       "roma",
     ],
   },
-  21: {
+  25: {
     groups: [
       {
         number: 1,
@@ -1092,7 +1092,7 @@ const data = {
       "saque",
     ],
   },
-  22: {
+  26: {
     groups: [
       {
         number: 1,
@@ -1134,7 +1134,7 @@ const data = {
       "saltar",
     ],
   },
-  23: {
+  27: {
     groups: [
       {
         number: 1,
@@ -1176,7 +1176,7 @@ const data = {
       "meta",
     ],
   },
-  24: {
+  28: {
     groups: [
       {
         number: 1,
@@ -1218,7 +1218,7 @@ const data = {
       "mangueira",
     ],
   },
-  25: {
+  30: {
     groups: [
       {
         number: 1,
@@ -1260,7 +1260,7 @@ const data = {
       "distância",
     ],
   },
-  26: {
+  31: {
     groups: [
       {
         number: 1,
@@ -1302,7 +1302,7 @@ const data = {
       "atrás",
     ],
   },
-  27: {
+  32: {
     groups: [
       {
         number: 1,
@@ -1344,7 +1344,7 @@ const data = {
       "caixa",
     ],
   },
-  28: {
+  33: {
     groups: [
       {
         number: 1,
@@ -1386,7 +1386,7 @@ const data = {
       "etevaldo",
     ],
   },
-  29: {
+  34: {
     groups: [
       {
         number: 1,
@@ -1428,7 +1428,7 @@ const data = {
       "flocos",
     ],
   },
-  30: {
+  35: {
     groups: [
       {
         number: 1,
