@@ -84,6 +84,9 @@
 
   <!-- 引入info弹出框 -->
   <Dialog :isOpen="isOpen" @closeModal="isOpen = false" />
+
+  <!-- 引入页脚 -->
+  <Footer />
 </template>
 
 <script setup>
