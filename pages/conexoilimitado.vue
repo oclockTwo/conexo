@@ -273,7 +273,7 @@ useHead({
     {
       name: "description",
       content:
-        "uma versão em português, similar ao Wordle e sem fim, do popular jogo de Conexões do New York Times.",
+        "Jogo de palavras onde o objetivo é formar 4 grupos de 4 palavras que tenham algo em comum",
     },
   ],
   link: [

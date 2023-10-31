@@ -45,7 +45,7 @@
         icon="circle-question"
         class="text-xl cursor-pointer hover:text-gray-400"
       />
-      <h2 class="text-3xl font-bold mt-2">CONEXO</h2>
+      <h2 class="text-3xl font-bold mt-2">CONEXO {{ day + "/" + month }}</h2>
       <font-awesome-icon
         icon="plus"
         class="text-xl cursor-pointer hover:text-gray-400"
@@ -123,11 +123,11 @@
   <Dialog :isOpen="isOpen" @closeModal="isOpen = false" />
 
   <!-- 文字区  -->
-  <section class="bg-stone-200 leading-6 text-black w-full">
+  <section class="bg-stone-200 leading-6 text-black w-full  overflow-auto">
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
     >
-      <h2 class="text-3xl font-extrabold mb-2">Conexo Jogo</h2>
+      <h2 class="text-3xl font-extrabold mb-2">Introdução ao Jogo Conexo</h2>
       <p class="mb-2 text-base font-normal text-gray-800">
         Conexo é um popular jogo de quebra-cabeça de associação de palavras onde
         os jogadores recebem uma série de quatro palavras e devem identificar
@@ -254,13 +254,13 @@
           <br />
           <strong>Quatro Grupos:</strong><br />
           <br />
-          <strong>Vermelho (Mais fácil):</strong> Dicas simples que são diretas
+          <strong>🔴 Vermelho (Mais fácil):</strong> Dicas simples que são diretas
           para conectar com a palavra alvo.<br />
-          <strong>Verde (Segundo mais fácil): </strong>Dicas um pouco mais
+          <strong>🟢 Verde (Segundo mais fácil): </strong>Dicas um pouco mais
           desafiadoras, mas ainda gerenciáveis para a maioria dos jogadores.<br />
-          <strong>Laranja (Médio): </strong>Dicas de dificuldade moderada que
+          <strong>🟠 Laranja (Médio): </strong>Dicas de dificuldade moderada que
           requerem mais pensamento e criatividade.<br />
-          <strong>Azul (Difícil):</strong> A categoria mais desafiadora com
+          <strong>🔵 Azul (Difícil):</strong> A categoria mais desafiadora com
           dicas complexas que exigem raciocínio profundo e fortes habilidades de
           associação de palavras.<br />
           <br />
@@ -308,7 +308,7 @@
   </section>
 
   <!-- 页脚 -->
-  <footer>
+  <footer class="mt-4">
     <div class="mx-auto px-4 leading-7 text-black">
       <div class="flex items-center justify-center text-black">
         <div class="text-xs font-normal leading-3 text-slate-800">
@@ -559,7 +559,7 @@ useHead({
     {
       name: "description",
       content:
-        "uma versão em português, similar ao Wordle e sem fim, do popular jogo de Conexões do New York Times.",
+        "Jogo de palavras onde o objetivo é formar 4 grupos de 4 palavras que tenham algo em comum",
     },
   ],
   link: [
