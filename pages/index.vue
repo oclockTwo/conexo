@@ -548,21 +548,6 @@ useHead({
       type: "image/x-icon",
     },
   ],
-  script: [
-    {
-      async: true,
-      src: "https://www.googletagmanager.com/gtag/js?id=G-DD1SKK8SCF",
-    },
-    {
-      children: `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-DD1SKK8SCF');
-      `,
-    },
-  ],
 });
 </script>
 
