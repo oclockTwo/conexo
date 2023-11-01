@@ -124,6 +124,26 @@
 
   <!-- 文字区  -->
   <section class="bg-stone-200 leading-6 text-black w-full overflow-auto">
+    <div class="text-sm p-6">
+      Se você quiser obter as respostas e dicas do jogo Conexo de hoje, você
+      pode visitar
+      <a
+        href="/conexo-resposta-hoje"
+        class="leading-7 cursor-pointer text-green-500"
+        target="_blank"
+        >conexo dica</a
+      >
+      e
+      <a
+        href="/conexo-resposta-hoje"
+        class="leading-7 cursor-pointer text-green-500"
+        target="_blank"
+        >conexo resposta</a
+      >. Nosso objetivo é que você passe um dia tranquilo e alegre, colhendo
+      felicidade e sensação de realização, então não queremos que você sinta
+      frustração. Se você realmente não consegue adivinhar as respostas, vá lá e
+      dê uma olhada. Temos total confiança em você!
+    </div>
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
     >
@@ -520,9 +540,7 @@ async function copyToClipboard(target) {
   }, 2000);
   const text = generatorResultText();
   try {
-    await navigator.clipboard.writeText(
-      `${text.infoText}\n${text.colorText}`
-    );
+    await navigator.clipboard.writeText(`${text.infoText}\n${text.colorText}`);
   } catch (err) {
     console.error("Error in copy: ", err);
   }
