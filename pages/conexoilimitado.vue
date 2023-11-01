@@ -271,12 +271,12 @@ async function copyToClipboard(target) {
 }
 
 useHead({
-  title: "Conexo Jogo Ilimitado - Forme 4 grupos de 4 palavras que tenham algo em comum",
+  title: "Conexo Ilimitado",
   meta: [
     {
       name: "description",
       content:
-        "Jogo de palavras onde o objetivo é formar 4 grupos de 4 palavras que tenham algo em comum",
+        "Modo de jogo ilimitado Conexo",
     },
   ],
   link: [

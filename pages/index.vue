@@ -529,7 +529,7 @@ async function copyToClipboard(target) {
 }
 
 useHead({
-  title: "Conexo Jogo - Forme 4 grupos de 4 palavras que tenham algo em comum",
+  title: "Conexo Jogo ",
   meta: [
     {
       name: "description",
