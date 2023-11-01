@@ -237,18 +237,18 @@ function getDate() {
 }
 
 useHead({
-  title: "Resposta do Conexo hoje",
+  title: "As respostas e dicas do Conexo de hoje",
   meta: [
     {
       name: "description",
       content:
-        "Revele a resposta do Conexo e explique as palavras do Conexo de hoje",
+        "Revele as respostas do Conexo de hoje e as dicas do Conexo de hoje, e explique as palavras do Conexo de hoje",
     },
   ],
   link: [
     {
       rel: "canonical",
-      href: "https://conexojogo.com/conexo-resposta-hoje/",
+      href: "https://conexojogo.com/conexo-resposta-hoje",
     },
     {
       rel: "icon",
