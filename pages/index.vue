@@ -47,8 +47,9 @@
       />
       <h2 class="text-3xl font-bold mt-2">CONEXO {{ day + "/" + month }}</h2>
       <font-awesome-icon
-        icon="plus"
+        icon="house"
         class="text-xl cursor-pointer hover:text-gray-400"
+        @click="goHome()"
       />
     </div>
 
@@ -333,6 +334,7 @@
 
 <script setup>
 import { ref, reactive, onMounted, watch } from "vue";
+import { goHome } from "/composables/utility";
 import "animate.css";
 import autoAnimate from "@formkit/auto-animate";
 const data = useData(); // 获取composable中的游戏数据

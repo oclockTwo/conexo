@@ -10,8 +10,9 @@
       />
       <h1 class="text-3xl">Conexo Ilimitado</h1>
       <font-awesome-icon
-        icon="plus"
+        icon="house"
         class="text-xl cursor-pointer hover:text-gray-400"
+        @click="goHome()"
       />
     </div>
 
@@ -90,7 +91,8 @@
 </template>
 
 <script setup>
-import { ref, reactive, onMounted, watch } from "vue";
+import { ref, reactive, onMounted} from "vue";
+import { goHome } from "/composables/utility";
 import "animate.css";
 import autoAnimate from "@formkit/auto-animate";
 const data = useUnlimitedData(); // 获取composable中的游戏数据
@@ -262,9 +264,7 @@ async function copyToClipboard(target) {
   }, 2000);
   const text = generatorResultText();
   try {
-    await navigator.clipboard.writeText(
-      `${text.infoText}\n${text.colorText}`
-    );
+    await navigator.clipboard.writeText(`${text.infoText}\n${text.colorText}`);
   } catch (err) {
     console.error("Error in copy: ", err);
   }
@@ -275,8 +275,7 @@ useHead({
   meta: [
     {
       name: "description",
-      content:
-        "Modo de jogo ilimitado Conexo",
+      content: "Modo de jogo ilimitado Conexo",
     },
   ],
   link: [
