@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen bg-slate-900 overflow-auto">
     <div
-      class="flex w-full sm:max-w-[520px] px-4 mx-auto text-white items-center justify-between"
+      class="flex w-full sm:max-w-[520px] px-4 py-2 mx-auto text-white items-center justify-between"
     >
       <font-awesome-icon
         @click="openDialog"
@@ -9,6 +9,11 @@
         class="text-xl cursor-pointer hover:text-gray-400"
       />
       <h1 class="text-3xl">Conexo Ilimitado</h1>
+      <font-awesome-icon
+        icon="rotate"
+        class="text-xl cursor-pointer hover:text-gray-400"
+        @click="reload()"
+      />
       <font-awesome-icon
         icon="house"
         class="text-xl cursor-pointer hover:text-gray-400"
@@ -86,12 +91,21 @@
   <!-- 引入info弹出框 -->
   <Dialog :isOpen="isOpen" @closeModal="isOpen = false" />
 
+  <!-- 文字区 -->
+  <div class="bg-stone-200 leading-6 text-black w-full overflow-auto">
+    <div class="p-6">
+      Os dados atuais são todos já apresentados anteriormente, pedimos
+      desculpas, mas estamos trabalhando rapidamente para criar novos dados,
+      aguarde...
+    </div>
+  </div>
+
   <!-- 引入页脚 -->
   <Footer />
 </template>
 
 <script setup>
-import { ref, reactive, onMounted} from "vue";
+import { ref, reactive, onMounted } from "vue";
 import { goHome } from "/composables/utility";
 import "animate.css";
 import autoAnimate from "@formkit/auto-animate";
@@ -267,6 +281,12 @@ async function copyToClipboard(target) {
     await navigator.clipboard.writeText(`${text.infoText}\n${text.colorText}`);
   } catch (err) {
     console.error("Error in copy: ", err);
+  }
+}
+
+function reload() {
+  if(process.client) {
+    window.location.reload();
   }
 }
 
