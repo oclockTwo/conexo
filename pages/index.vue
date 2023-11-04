@@ -98,7 +98,7 @@
       <div
         v-for="group in localData.groups"
         :key="group.number"
-        class="leading-4 font-semibold p-1 w-full"
+        class="leading-6 font-semibold p-1 w-full"
       >
         <div
           class="py-5 rounded-lg text-center"
@@ -111,7 +111,7 @@
       <div
         v-for="item in localData.items"
         :key="item.id"
-        class="leading-6 font-semibold w-1/4 p-1"
+        class="leading-6 font-bold w-1/4 p-1"
       >
         <div class="cell-normal" @click="clickCell(item, $event.target)">
           {{ item.word }}
@@ -572,11 +572,14 @@ useHead({
 </script>
 
 <style scoped>
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 .cell-normal {
-  @apply py-6 bg-slate-700 text-center rounded-lg hover:bg-slate-600 cursor-pointer uppercase overflow-auto;
+  @apply py-6 bg-slate-700 text-center rounded-lg hover:bg-slate-600 cursor-pointer uppercase overflow-auto whitespace-nowrap;
 }
 .cell-selected {
-  @apply py-6 bg-sky-500 text-center rounded-lg uppercase overflow-auto;
+  @apply py-6 bg-sky-500 text-center rounded-lg uppercase overflow-auto whitespace-nowrap;
 }
 .cell-1-color {
   @apply py-6 bg-red-500 text-center rounded-lg uppercase;
