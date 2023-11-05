@@ -148,7 +148,7 @@
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
     >
-      <h2 class="text-3xl font-extrabold mb-2">Conexo Hoje</h2>
+      <h2 class="text-3xl font-extrabold mb-2">Conexo Jogo Hoje</h2>
       <p class="mb-2 text-base font-normal text-gray-800">
         Conexo é um popular jogo de quebra-cabeça de associação de palavras onde
         os jogadores recebem uma série de quatro palavras e devem identificar
@@ -247,7 +247,7 @@
         />
       </div>
     </div>
-    <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg my-5">
+    <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg mt-5">
       <h2 class="text-3xl font-extrabold mb-2 text-center my-4">
         FAQs sobre Jogo Conexo
       </h2>
@@ -313,7 +313,7 @@
           Connections!
         </p>
       </div>
-      <div class="shadow-xl bg-white rounded-lg p-4 my-4">
+      <div class="shadow-xl bg-white rounded-lg p-4 mt-4">
         <h3 class="mb-2 text-xl font-bold text-gray-800">
           As principais diferenças entre conexo ws?
         </h3>
@@ -325,6 +325,24 @@
           que ambos são jogos de palavras.
         </p>
       </div>
+    </div>
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl mb-5"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">
+        Diferença entre Conexo Jogo e QSMP Conexo
+      </h2>
+      <p class="my-2 text-base font-normal text-gray-800">
+          Conexo Jogo" e "QSMP Conexo" são duas versões ou plataformas
+          diferentes do jogo Conexo. Com base nas informações conhecidas até
+          agora, "QSMP Conexo" é uma versão criada pela comunidade de servidores
+          multijogador multilíngue do Minecraft QSMP.<br />
+          <br />
+          Ambos os jogos têm a mesma jogabilidade, a diferença é que QSMP Conexo
+          e Conexo Jogo usam diferentes conjuntos de dados de palavras e temas.
+          No entanto, é importante notar que a jogabilidade é consistente entre
+          os dois. Você pode desfrutar de Conexo Jogo aqui.<br />
+        </p>
     </div>
   </section>
 

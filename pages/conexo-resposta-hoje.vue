@@ -8,6 +8,22 @@
     <h2 class="px-5 m-2 text-2xl italic leading-7 text-gray-500">
       Os grupos Conexo para {{ today }} foram divulgados!
     </h2>
+    <p class="px-5 m-2 text-2xl leading-7">
+      Ir jogar
+      <a
+        href="/"
+        class="leading-7 cursor-pointer text-green-500"
+        target="_blank"
+        >Conexo Jogo</a
+      >
+      e
+      <a
+        href="/conexoilimitado"
+        class="leading-7 cursor-pointer text-green-500"
+        target="_blank"
+        >Conexo Ilimitado</a
+      >
+    </p>
     <img
       src="/images/0.png"
       alt="conexo de hoje"
@@ -123,9 +139,9 @@
       </div>
       <img
         loading="lazy"
-        src="/images/SPOILER-ALERT.jpeg"
-        alt="Conexo Answer Spoiler Alert"
-        class="block w-2/3 text-xl leading-7 mx-auto"
+        src="/images/SpoilerAlert.jpeg"
+        alt="Conexo Spoiler Alert"
+        class="block w-4/5 text-xl mx-auto"
       />
       <div class="text-xl leading-7 text-neutral-800 mt-10">
         <h2 class="mb-5 text-2xl leading-9">Respostas do Conexo de Hoje</h2>
@@ -209,7 +225,7 @@
 </template>
 
 <script setup>
-import {reactive} from 'vue';
+import { reactive } from "vue";
 const data = useData(); // 获取composable中的游戏数据
 
 const [year, month, day] = getDate();

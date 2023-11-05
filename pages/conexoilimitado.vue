@@ -98,6 +98,157 @@
       desculpas, mas estamos trabalhando rapidamente para criar novos dados,
       aguarde...
     </div>
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">Conexo Jogo Ilimitado</h2>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        <a
+          href="/"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >Conexo</a
+        >
+        é um popular jogo de quebra-cabeça de associação de palavras onde os
+        jogadores recebem uma série de quatro palavras e devem identificar uma
+        palavra que pode ser conectada a todas as quatro palavras dadas de
+        alguma forma. O objetivo é encontrar o tema comum ou a relação entre as
+        palavras e chegar à resposta correta.
+      </p>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        A jogabilidade de Conexo Ilimitado é exatamente a mesma de Conexo, a
+        única diferença é que
+        <a
+          href="/"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >Conexo Jogo</a
+        >
+        pode ser jogado apenas uma vez por dia, enquanto Conexo Ilimitado pode
+        ser jogado várias vezes por dia. Você pode clicar no botão de
+        atualização na parte superior da área de jogo para começar de novo,
+        divirta-se!
+      </p>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        Assim como no
+        <a
+          href="/"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >Conexo Jogo</a
+        >, ao jogar o jogo Conexo Ilimitado, seu objetivo é selecionar quatro
+        grupos de palavras que estejam relacionadas de alguma maneira. O jogo
+        então verificará se seus grupos de palavras escolhidos estão corretos e
+        os categorizará em diferentes grupos representados por diferentes cores:
+        Vermelho, Verde, Laranja e Azul. Cada categoria de cor representa um
+        grupo de palavras relacionadas.
+      </p>
+    </div>
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center rounded-xl shadow-xl my-5"
+    >
+      <div>
+        <h2 class="text-3xl font-extrabold mb-2">
+          Como jogar o Conexo Ilimitado
+        </h2>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          1
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">Leia e Entenda</h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Comece lendo cuidadosamente as palavras dadas no quebra-cabeça.
+          Entenda seus significados e contexto.
+        </p>
+        <img
+          src="/images/unlimited/1.png"
+          alt="Conexo Ilimitado 1"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          2
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Encontre 4 Palavras com um Ponto em Comum
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Procure quatro palavras que tenham algum tipo de ligação, formando um
+          grupo. Cada grupo de quatro palavras deve ter um tema comum.
+        </p>
+        <img
+          src="/images/unlimited/2.png"
+          alt="Conexo Ilimitado 2"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          3
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Selecione 4 Palavras
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Selecione um conjunto de quatro palavras. Veja se sua resposta
+          corresponde à solução correta. Aproveite o desafio e a emoção do jogo!
+        </p>
+        <img
+          src="/images/unlimited/3.png"
+          alt="Conexo Ilimitado 3"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          4
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Compartilhar e Feedback
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Clique no botão de copiar para copiar sua pontuação final, e então
+          compartilhe nas suas redes sociais para que mais pessoas saibam da sua
+          alegria. Você também pode enviar suas sugestões sobre este jogo para
+          nós, para que possamos continuar a melhorar.
+        </p>
+        <img
+          src="/images/unlimited/4.png"
+          alt="Conexo 4"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+    </div>
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">
+        Diferença entre Conexo Ilimitado e QSMP Conexo
+      </h2>
+      <p class="my-2 text-base font-normal text-gray-800">
+          Conexo Ilimitado" e "QSMP Conexo" são duas versões ou plataformas
+          diferentes do jogo Conexo. Com base nas informações conhecidas até
+          agora, "Conexo Ilimitado" permite que os jogadores joguem inúmeras
+          vezes por dia, enquanto "QSMP Conexo" é uma versão criada pela
+          comunidade de servidores multijogador multilíngue do Minecraft
+          QSMP.<br />
+          <br />
+          Ambos os jogos têm a mesma jogabilidade, a diferença é que a versão
+          QSMP Conexo só pode ser jogada uma vez por dia, enquanto Conexo
+          Ilimitado pode ser jogado inúmeras vezes por dia; além disso, QSMP
+          Conexo e Conexo Ilimitado usam diferentes conjuntos de dados de
+          palavras. No entanto, é importante notar que a jogabilidade é
+          consistente entre os dois.<br />
+        </p>
+    </div>
   </div>
 
   <!-- 引入页脚 -->
@@ -285,7 +436,7 @@ async function copyToClipboard(target) {
 }
 
 function reload() {
-  if(process.client) {
+  if (process.client) {
     window.location.reload();
   }
 }
