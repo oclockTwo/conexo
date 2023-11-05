@@ -222,7 +222,25 @@
         </p>
         <img
           src="/images/unlimited/4.png"
-          alt="Conexo 4"
+          alt="Conexo Ilimitado 4"
+          class="rounded-lg my-4 mx-auto h-56"
+        />
+      </div>
+      <div>
+        <p
+          class="text-3xl rounded-full shadow-lg bg-slate-50 w-16 h-16 p-4 mx-auto my-8"
+        >
+          5
+        </p>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Jogue Novamente
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          Muito bem, você venceu. Você pode clicar no botão de atualizar aqui para jogar novamente, divirta-se!
+        </p>
+        <img
+          src="/images/unlimited/5.png"
+          alt="Conexo Ilimitado 5"
           class="rounded-lg my-4 mx-auto h-56"
         />
       </div>
