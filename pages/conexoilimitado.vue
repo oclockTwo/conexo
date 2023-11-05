@@ -232,11 +232,10 @@
         >
           5
         </p>
-        <h3 class="mb-2 text-xl font-bold text-gray-800">
-          Jogue Novamente
-        </h3>
+        <h3 class="mb-2 text-xl font-bold text-gray-800">Jogue Novamente</h3>
         <p class="mb-2 text-base font-normal text-gray-800">
-          Muito bem, você venceu. Você pode clicar no botão de atualizar aqui para jogar novamente, divirta-se!
+          Muito bem, você venceu. Você pode clicar no botão de atualizar aqui
+          para jogar novamente, divirta-se!
         </p>
         <img
           src="/images/unlimited/5.png"
@@ -252,20 +251,34 @@
         Diferença entre Conexo Ilimitado e QSMP Conexo
       </h2>
       <p class="my-2 text-base font-normal text-gray-800">
-          Conexo Ilimitado" e "QSMP Conexo" são duas versões ou plataformas
-          diferentes do jogo Conexo. Com base nas informações conhecidas até
-          agora, "Conexo Ilimitado" permite que os jogadores joguem inúmeras
-          vezes por dia, enquanto "QSMP Conexo" é uma versão criada pela
-          comunidade de servidores multijogador multilíngue do Minecraft
-          QSMP.<br />
-          <br />
-          Ambos os jogos têm a mesma jogabilidade, a diferença é que a versão
-          QSMP Conexo só pode ser jogada uma vez por dia, enquanto Conexo
-          Ilimitado pode ser jogado inúmeras vezes por dia; além disso, QSMP
-          Conexo e Conexo Ilimitado usam diferentes conjuntos de dados de
-          palavras. No entanto, é importante notar que a jogabilidade é
-          consistente entre os dois.<br />
-        </p>
+        Conexo Ilimitado" e "QSMP Conexo" são duas versões ou plataformas
+        diferentes do jogo Conexo. Com base nas informações conhecidas até
+        agora, "Conexo Ilimitado" permite que os jogadores joguem inúmeras vezes
+        por dia, enquanto "QSMP Conexo" é uma versão criada pela comunidade de
+        servidores multijogador multilíngue do Minecraft QSMP.<br />
+        <br />
+        Ambos os jogos têm a mesma jogabilidade, a diferença é que a versão QSMP
+        Conexo só pode ser jogada uma vez por dia, enquanto Conexo Ilimitado
+        pode ser jogado inúmeras vezes por dia; além disso, QSMP Conexo e Conexo
+        Ilimitado usam diferentes conjuntos de dados de palavras. No entanto, é
+        importante notar que a jogabilidade é consistente entre os dois.<br />
+      </p>
+    </div>
+    <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg mt-5">
+      <h2 class="text-3xl font-extrabold mb-2 text-center my-4">
+        Qual é a ordem do Conexo?
+      </h2>
+      <p class="mb-2 text-base font-normal text-gray-800">
+        A ordem dos jogos em Conexo Ilimitado é aleatória, já embaralhamos a
+        ordem das palavras que têm o mesmo tema em quatro grupos com
+        antecedência, então quando você joga, a ordem em cada jogo é diferente,
+        não há uma ordem consistente para referência.<br />
+        <br />
+        Além disso, o objetivo deste jogo é fazer com que se divirta e sinta
+        prazer, esperamos que sinta alegria e satisfação durante o jogo.
+        Esperamos sinceramente que goste deste jogo, e muitas funcionalidades
+        ainda estão em desenvolvimento, fique atento!
+      </p>
     </div>
   </div>
 

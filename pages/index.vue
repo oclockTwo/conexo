@@ -325,6 +325,22 @@
           que ambos são jogos de palavras.
         </p>
       </div>
+      <div class="shadow-xl bg-white rounded-lg p-4 mt-4">
+        <h3 class="mb-2 text-xl font-bold text-gray-800">
+          Qual é a ordem do Conexo?
+        </h3>
+        <p class="mb-2 text-base font-normal text-gray-800">
+          A ordem dos jogos em Conexo Jogo é aleatória, já embaralhamos a ordem
+          das palavras que têm o mesmo tema em quatro grupos com antecedência,
+          então quando você joga, a ordem em cada jogo é diferente, não há uma
+          ordem consistente para referência.<br />
+          <br />
+          Além disso, o objetivo deste jogo é fazer com que se divirta e sinta
+          prazer, esperamos que sinta alegria e satisfação durante o jogo.
+          Esperamos sinceramente que goste deste jogo, e muitas funcionalidades
+          ainda estão em desenvolvimento, fique atento!
+        </p>
+      </div>
     </div>
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl mb-5"
@@ -333,16 +349,16 @@
         Diferença entre Conexo Jogo e QSMP Conexo
       </h2>
       <p class="my-2 text-base font-normal text-gray-800">
-          Conexo Jogo" e "QSMP Conexo" são duas versões ou plataformas
-          diferentes do jogo Conexo. Com base nas informações conhecidas até
-          agora, "QSMP Conexo" é uma versão criada pela comunidade de servidores
-          multijogador multilíngue do Minecraft QSMP.<br />
-          <br />
-          Ambos os jogos têm a mesma jogabilidade, a diferença é que QSMP Conexo
-          e Conexo Jogo usam diferentes conjuntos de dados de palavras e temas.
-          No entanto, é importante notar que a jogabilidade é consistente entre
-          os dois. Você pode desfrutar de Conexo Jogo aqui.<br />
-        </p>
+        Conexo Jogo" e "QSMP Conexo" são duas versões ou plataformas diferentes
+        do jogo Conexo. Com base nas informações conhecidas até agora, "QSMP
+        Conexo" é uma versão criada pela comunidade de servidores multijogador
+        multilíngue do Minecraft QSMP.<br />
+        <br />
+        Ambos os jogos têm a mesma jogabilidade, a diferença é que QSMP Conexo e
+        Conexo Jogo usam diferentes conjuntos de dados de palavras e temas. No
+        entanto, é importante notar que a jogabilidade é consistente entre os
+        dois. Você pode desfrutar de Conexo Jogo aqui.<br />
+      </p>
     </div>
   </section>
 
