@@ -336,7 +336,7 @@ onMounted(() => {
 
 const selectedWords = [];
 const selectedTarget = [];
-const randomNumber = Math.floor(Math.random() * (Object.keys(data).length + 1));
+const randomNumber = 0
 
 const groupColor = ref({
   1: "bg-red-500",
@@ -354,7 +354,7 @@ const localData = reactive({
 
 // 初始化数据，该函数立即执行
 (() => {
-  for (let i = 0; i < data[randomNumber].startingBoard.length; i++) {
+  for (let i = 0; i < data[0].startingBoard.length; i++) {
     localData.items.push({
       id: i,
       word: data[randomNumber].startingBoard[i],
@@ -364,14 +364,19 @@ const localData = reactive({
 
 function selectGameData(event) {
   const key = dateToKey(event.target.value);
-  console.log(key);
   localData.items.length = 0;
+  localData.groups.length = 0;
+  localData.attempts.length = 0;
+  localData.status = "selecting";
   for (let i = 0; i < data[key].startingBoard.length; i++) {
     localData.items.push({
       id: i,
       word: data[key].startingBoard[i],
     });
   }
+  randomNumber = key;
+  selectedWords.length = 0;
+  selectedTarget.length = 0;
 }
 
 function filteredData(start, end) {
