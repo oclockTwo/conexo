@@ -214,13 +214,6 @@
         </p>
       </div>
     </div>
-
-    <!-- <div class="w-[200px]">
-      <div class="h-[40px] rounded-t-xl bg-[#FF0000] mb-1"></div>
-      <div class="h-[40px] rounded-lg bg-[#00FF00] mb-1"></div>
-      <div class="h-[40px] rounded-lg bg-[#FFA500]"></div>
-      <div class="h-[40px] rounded-b-xl bg-[#0000FF]"></div>
-    </div> -->
   </div>
 </template>
 
