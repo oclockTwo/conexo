@@ -10,11 +10,6 @@
       />
       <h1 class="text-3xl">Conexo Ilimitado</h1>
       <font-awesome-icon
-        icon="rotate"
-        class="text-xl cursor-pointer hover:text-gray-400"
-        @click="reload()"
-      />
-      <font-awesome-icon
         icon="house"
         class="text-xl cursor-pointer hover:text-gray-400"
         @click="goHome()"
@@ -57,8 +52,12 @@
       class="flex w-full sm:max-w-[520px] items-center mx-auto flex-wrap flex-1 text-white"
       ref="cells"
     >
-      <div class="flex w-full">
-        <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p>
+      <div class="flex w-full items-center justify-between">
+        <select class="select select-xs select-bordered text-black" @change="selectGameData">
+          <option disabled selected>1/10/2023</option>
+          <option v-for="(value, key) in filteredData(0, 36)" :key="key">{{ keyToDate(Number(key)) }}</option>
+        </select>
+        <!-- <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p> -->
         <p class="text-semibold p-2">
           TENTATIVAS: {{ localData.attempts.length }}
         </p>
@@ -93,13 +92,36 @@
 
   <!-- 文字区 -->
   <div class="bg-stone-200 leading-6 text-black w-full overflow-auto">
-    <div class="p-6">
-      Os dados atuais são todos já apresentados anteriormente, pedimos
-      desculpas, mas estamos trabalhando rapidamente para criar novos dados,
-      aguarde...
+    <div
+      class="p-6 text-center sm:w-3/4 xl:w-3/5 mx-auto bg-red-100 rounded-xl my-"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">Aviso Amigável</h2>
+      <p>
+        Os dados de palavras do Conexo Ilimitado são todos históricos diários
+        anteriores, você pode escolher livremente um dia para começar.
+        Divirta-se 😄 e comece um dia alegre daqui!<br /><br />
+      </p>
+      <p>
+        Além disso, você também pode obter todos os dados de jogos históricos
+        anteriores em
+        <a
+          href="/conexo-dias-anteriores"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >Conexo Jogo Dias Anteriores</a
+        >. Se você encontrar dificuldades ou começar a se sentir frustrado
+        durante o jogo, pedimos desculpas por não termos projetado bem os dados
+        de palavras. Portanto, você pode consultar dicas e respostas do Conexo
+        Jogo para entender onde está o problema.<br /><br />
+      </p>
+      <p>
+        Por favor, sempre lembre-se de que nosso objetivo ao projetar este jogo
+        é para que você se sinta feliz e satisfeito; se isso não acontece,
+        sentimos muito!
+      </p>
     </div>
     <div
-      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-green-50 rounded-xl my-5"
     >
       <h2 class="text-3xl font-extrabold mb-2">Conexo Jogo Ilimitado</h2>
       <p class="mb-2 text-base font-normal text-gray-800">
@@ -145,7 +167,7 @@
       </p>
     </div>
     <div
-      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center rounded-xl shadow-xl my-5"
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-orange-50 rounded-xl shadow-xl my-5"
     >
       <div>
         <h2 class="text-3xl font-extrabold mb-2">
@@ -264,7 +286,9 @@
         importante notar que a jogabilidade é consistente entre os dois.<br />
       </p>
     </div>
-    <div class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto rounded-lg mt-5">
+    <div
+      class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto bg-blue-100 rounded-lg mt-5"
+    >
       <h2 class="text-3xl font-extrabold mb-2 text-center my-4">
         Qual é a ordem do Conexo?
       </h2>
@@ -291,7 +315,7 @@ import { ref, reactive, onMounted } from "vue";
 import { goHome } from "/composables/utility";
 import "animate.css";
 import autoAnimate from "@formkit/auto-animate";
-const data = useUnlimitedData(); // 获取composable中的游戏数据
+const data = useUnlimitedData(); // 获取composable中的历史游戏数据
 
 // 用于info弹出框
 const isOpen = ref(false);
@@ -338,6 +362,59 @@ const localData = reactive({
   }
 })();
 
+function selectGameData(event) {
+  const key = dateToKey(event.target.value);
+  console.log(key);
+  localData.items.length = 0;
+  for (let i = 0; i < data[key].startingBoard.length; i++) {
+    localData.items.push({
+      id: i,
+      word: data[key].startingBoard[i],
+    });
+  }
+}
+
+function filteredData(start, end) {
+  return (
+    Object.keys(data)
+      // 将键转换为数字，并过滤出落在指定范围内的键
+      .map(Number)
+      .filter((key) => key >= start && key <= end)
+      // 使用reduce构造新的对象
+      .reduce((accumulator, key) => {
+        accumulator[key] = data[key];
+        return accumulator;
+      }, {})
+  );
+}
+
+function keyToDate(key) {
+  const startDate = new Date("2023-10-01"); // 使用 YYYY-MM-DD 格式
+  startDate.setDate(startDate.getDate() + key); // 在起始日期上加上 key 天
+  return `${startDate.getDate()}/${
+    startDate.getMonth() + 1
+  }/${startDate.getFullYear()}`;
+}
+
+function dateToKey(dateString) {
+  // 先将输入的日期字符串从DD/MM/YYYY格式转换为Date对象
+  const parts = dateString.split('/');
+  const day = parseInt(parts[0], 10);
+  const month = parseInt(parts[1], 10) - 1; // 月份是从0开始的
+  const year = parseInt(parts[2], 10);
+  const endDate = new Date(year, month, day);
+
+  const startDate = new Date("2023-10-01"); // 起始日期
+
+  // 计算两个日期之间的时间差（毫秒）
+  const timeDiff = endDate - startDate;
+
+  // 将时间差（毫秒）转换为天数
+  const key = timeDiff / (1000 * 60 * 60 * 24);
+
+  // 返回向下取整的天数，因为key应该是整数
+  return Math.floor(key) + 1;
+}
 function clickCell(item, target) {
   if (selectedWords.includes(item.word)) {
     return;

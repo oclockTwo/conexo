@@ -11,7 +11,7 @@
           <li
             class="ml-2 flex items-end border-l border-solid border-slate-500 pl-2 text-center"
           >
-            <a href="/" class="cursor-pointer">Home </a>
+            <a href="/" class="cursor-pointer">Conexo </a>
             <a href="/conexoilimitado" class="cursor-pointer ml-2"
               >| Conexo Ilimitado
             </a>
