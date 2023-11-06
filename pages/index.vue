@@ -125,25 +125,37 @@
 
   <!-- 文字区  -->
   <section class="bg-stone-200 leading-6 text-black w-full overflow-auto">
-    <div class="text-sm p-6">
-      Se você quiser obter as respostas e dicas do jogo Conexo de hoje, você
-      pode visitar
-      <a
-        href="/conexo-resposta-hoje"
-        class="leading-7 cursor-pointer text-green-500"
-        target="_blank"
-        >conexo dica</a
-      >
-      e
-      <a
-        href="/conexo-resposta-hoje"
-        class="leading-7 cursor-pointer text-green-500"
-        target="_blank"
-        >conexo resposta</a
-      >. Nosso objetivo é que você passe um dia tranquilo e alegre, colhendo
-      felicidade e sensação de realização, então não queremos que você sinta
-      frustração. Se você realmente não consegue adivinhar as respostas, vá lá e
-      dê uma olhada. Temos total confiança em você!
+    <div
+      class="p-6 text-center sm:w-3/4 xl:w-3/5 mx-auto bg-red-100 rounded-xl my-"
+    >
+      <h2 class="text-3xl font-extrabold mb-2">Aviso Amigável</h2>
+      <p>
+        Muitas funcionalidades ainda estão em desenvolvimento, aguarde com
+        expectativa!<br />
+        Se você gosta do nosso site, sinta-se bem-vindo para visitar sempre!<br />
+        Nosso objetivo é que as pessoas que jogam este jogo se sintam felizes e
+        satisfeitas, e que comecem o seu dia com prazer.<br /><br />
+      </p>
+      <p>
+        Se você quiser obter as respostas e dicas do jogo Conexo de hoje, você
+        pode visitar
+        <a
+          href="/conexo-resposta-hoje"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >conexo dica</a
+        >
+        e
+        <a
+          href="/conexo-resposta-hoje"
+          class="leading-7 cursor-pointer text-green-500"
+          target="_blank"
+          >conexo resposta</a
+        >. Nosso objetivo é que você passe um dia tranquilo e alegre, colhendo
+        felicidade e sensação de realização, então não queremos que você sinta
+        frustração. Se você realmente não consegue adivinhar as respostas, vá lá
+        e dê uma olhada. Temos total confiança em você!
+      </p>
     </div>
     <div
       class="py-8 px-4 sm:w-3/4 xl:w-3/5 mx-auto text-center bg-lime-50 rounded-xl my-5"
