@@ -89,7 +89,7 @@
       class="flex w-full sm:max-w-[520px] items-center mx-auto flex-wrap flex-1 text-white"
       ref="cells"
     >
-      <div class="flex w-full">
+      <div class="flex w-full justify-between">
         <p class="text-semibold p-2 mr-2">{{ today }}</p>
         <p class="text-semibold p-2">
           TENTATIVAS: {{ localData.attempts.length }}
@@ -143,15 +143,9 @@
           href="/conexo-resposta-hoje"
           class="leading-7 cursor-pointer text-green-500"
           target="_blank"
-          >conexo dica</a
+          >conexo dica e resposta</a
         >
-        e
-        <a
-          href="/conexo-resposta-hoje"
-          class="leading-7 cursor-pointer text-green-500"
-          target="_blank"
-          >conexo resposta</a
-        >. Nosso objetivo é que você passe um dia tranquilo e alegre, colhendo
+        . Nosso objetivo é que você passe um dia tranquilo e alegre, colhendo
         felicidade e sensação de realização, então não queremos que você sinta
         frustração. Se você realmente não consegue adivinhar as respostas, vá lá
         e dê uma olhada. Temos total confiança em você!
