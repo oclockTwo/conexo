@@ -53,14 +53,7 @@
       <p class="mx-0 mt-0 mb-4 text-lg leading-7 break-words text-neutral-800">
         Precisa das respostas de hoje do Conexo? Então fique por aqui e continue
         rolando para spoilers! Se preferir resolver por conta própria, vá para a
-        nossa página
-        <a
-          href="/conexo-dica-hoje"
-          class="leading-7 text-blue-600 cursor-pointer"
-          target="_blank"
-          >Conexo dica</a
-        >
-        abaixo para revelar as dicas aos poucos.
+        nossa página Conexo dica abaixo para revelar as dicas aos poucos.
       </p>
       <div class="flex justify-center my-10 text-xl leading-7 text-neutral-800">
         <a
@@ -151,10 +144,10 @@
         </p>
         <h3 class="mb-2 text-base font-bold leading-6">{{ today }}</h3>
         <ol class="my-4 list-decimal pl-10 text-lg" style="list-style: none">
-          <li class="text-left uppercase">1. {{ words[0] }}</li>
-          <li class="text-left uppercase">2. {{ words[1] }}</li>
-          <li class="text-left uppercase">3. {{ words[2] }}</li>
-          <li class="text-left uppercase">4. {{ words[3] }}</li>
+          <li class="text-left uppercase">🔴 {{ words[0] }}</li>
+          <li class="text-left uppercase">🟢 {{ words[1] }}</li>
+          <li class="text-left uppercase">🟠 {{ words[2] }}</li>
+          <li class="text-left uppercase">🔵 {{ words[3] }}</li>
         </ol>
       </div>
       <div class="text-xl leading-7 text-neutral-800">
@@ -189,7 +182,21 @@
           um novo quebra-cabeça é lançado, atualizaremos isso, então fique
           ligado!
         </p>
-        Estamos organizando ...
+        <div
+          class="flex justify-center my-10 text-xl leading-7 text-neutral-800"
+        >
+          <a
+            title="Conexo dias anteriores"
+            href="/conexo-dias-anteriores"
+            class="leading-7 cursor-pointer"
+            target="_blank"
+            ><button
+              class="p-2 text-lg leading-none text-center text-gray-700 normal-case bg-green-300 bg-none rounded-3xl"
+            >
+              A coleção de todos os dados de jogos históricos
+            </button></a
+          >
+        </div>
       </div>
       <div class="text-xl leading-7 text-neutral-800 mt-6">
         <h2 class="mx-0 mb-5 mt-0 text-2xl leading-9">
@@ -215,6 +222,8 @@
       </div>
     </div>
   </div>
+
+  <Footer />
 </template>
 
 <script setup>

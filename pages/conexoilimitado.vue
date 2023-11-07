@@ -368,7 +368,6 @@ function selectGameData(event) {
   localData.groups.length = 0;
   localData.attempts.length = 0;
   localData.status = "selecting";
-  console.log(randomNumber, key);
   for (let i = 0; i < data[key].startingBoard.length; i++) {
     localData.items.push({
       id: i,
@@ -434,7 +433,6 @@ function clickCell(item, target) {
   if (selectedWords.length === 4) {
     let isCorrect = false;
     let tempGroup = null;
-    console.log(randomNumber);
     for (let group of data[randomNumber].groups) {
       if (selectedWords.every((item) => group.words.includes(item))) {
         tempGroup = group;
@@ -446,7 +444,6 @@ function clickCell(item, target) {
     const attemptObj = {
       selected: Array.from(selectedWords),
     };
-    console.log(tempGroup, isCorrect, selectedWords);
     if (isCorrect) {
       correctSet(tempGroup, attemptObj.selected);
       attemptObj.group = tempGroup.number;
