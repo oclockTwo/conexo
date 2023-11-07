@@ -115,6 +115,14 @@
           Quer resolver o jogo Conexo de hoje por conta própria para criar
           quatro grupos de quatro? Veja se alguma dessas dicas ajuda!
         </p>
+        <div class="flex justify-evenly mb-4">
+          <a href="/">
+            <button class="btn btn-primary">Jogar Conexo</button>
+          </a>
+          <a href="/conexoilimitado">
+            <button class="btn btn-accent">Jogar Conexo Ilimitado</button>
+          </a>
+        </div>
         <ol class="my-4 list-decimal pl-10 text-lg">
           <li class="text-left uppercase">
             🔴 Grupo Vermelho<br class="text-neutral-800" />{{ theme[0] }}.
@@ -142,6 +150,14 @@
           Quer saber as respostas e grupos para o jogo diário Conexo? Nós temos
           eles aqui.
         </p>
+        <div class="flex justify-evenly mb-4">
+          <a href="/">
+            <button class="btn btn-primary">Jogar Conexo</button>
+          </a>
+          <a href="/conexoilimitado">
+            <button class="btn btn-accent">Jogar Conexo Ilimitado</button>
+          </a>
+        </div>
         <h3 class="mb-2 text-base font-bold leading-6">{{ today }}</h3>
         <ol class="my-4 list-decimal pl-10 text-lg" style="list-style: none">
           <li class="text-left uppercase">🔴 {{ words[0] }}</li>

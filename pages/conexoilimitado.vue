@@ -81,7 +81,7 @@
         class="leading-6 font-semibold w-1/4 p-1"
       >
         <div class="cell-normal" @click="clickCell(item, $event.target)">
-          {{ item.word }}
+          <p>{{ item.word }}</p>
         </div>
       </div>
     </div>

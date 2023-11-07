@@ -46,6 +46,14 @@
           atento!
         </p>
       </div>
+      <div class="flex justify-evenly mb-4">
+        <a href="/">
+          <button class="btn btn-primary">Jogar Conexo</button>
+        </a>
+        <a href="/conexoilimitado">
+          <button class="btn btn-accent">Jogar Conexo Ilimitado</button>
+        </a>
+      </div>
       <!-- 答案合集区域 -->
       <div class="flex flex-col gap-10">
         <div class="collapse bg-base-200">
