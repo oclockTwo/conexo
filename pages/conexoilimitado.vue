@@ -43,7 +43,7 @@
           class="flex items-center py-2 px-5 text-base cursor-pointer bg-sky-500 rounded-lg hover:bg-sky-400"
         >
           <font-awesome-icon icon="comment" />
-          <span class="ml-2">Feedback</span>
+          <span class="ml-2">Pesquisar no Facebook pelo grupo Conexo Jogo</span>
         </button>
       </div>
     </div>
