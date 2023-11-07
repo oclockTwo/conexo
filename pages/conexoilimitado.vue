@@ -336,7 +336,7 @@ onMounted(() => {
 
 const selectedWords = [];
 const selectedTarget = [];
-const randomNumber = 0
+let randomNumber = 0
 
 const groupColor = ref({
   1: "bg-red-500",
@@ -368,6 +368,7 @@ function selectGameData(event) {
   localData.groups.length = 0;
   localData.attempts.length = 0;
   localData.status = "selecting";
+  console.log(randomNumber, key);
   for (let i = 0; i < data[key].startingBoard.length; i++) {
     localData.items.push({
       id: i,
@@ -375,6 +376,7 @@ function selectGameData(event) {
     });
   }
   randomNumber = key;
+  console.log(randomNumber, key);
   selectedWords.length = 0;
   selectedTarget.length = 0;
 }
@@ -420,6 +422,7 @@ function dateToKey(dateString) {
   // 返回向下取整的天数，因为key应该是整数
   return Math.floor(key) + 1;
 }
+
 function clickCell(item, target) {
   if (selectedWords.includes(item.word)) {
     return;
@@ -431,7 +434,7 @@ function clickCell(item, target) {
   if (selectedWords.length === 4) {
     let isCorrect = false;
     let tempGroup = null;
-
+    console.log(randomNumber);
     for (let group of data[randomNumber].groups) {
       if (selectedWords.every((item) => group.words.includes(item))) {
         tempGroup = group;
@@ -443,7 +446,7 @@ function clickCell(item, target) {
     const attemptObj = {
       selected: Array.from(selectedWords),
     };
-
+    console.log(tempGroup, isCorrect, selectedWords);
     if (isCorrect) {
       correctSet(tempGroup, attemptObj.selected);
       attemptObj.group = tempGroup.number;
