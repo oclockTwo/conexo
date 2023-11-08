@@ -6,6 +6,7 @@
       descendo, lá também tem o que você está procurando.
     </p>
   </div>
+  <Footer />
 </template>
 
 <script setup></script>
