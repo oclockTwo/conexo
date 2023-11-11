@@ -461,6 +461,48 @@ const data = {
       "cintura",
     ],
   },
+  11: {
+    groups: [
+      {
+        number: 1,
+        theme: "Instrumentos de corda",
+        words: ["violão", "guitarra", "baixo", "violino"],
+      },
+      {
+        number: 2,
+        theme: "Instrumentos de sopro",
+        words: ["flauta", "saxofone", "trompete", "clarinete"],
+      },
+      {
+        number: 3,
+        theme: "Espaços abertos",
+        words: ["praça", "parque", "jardim", "campo"],
+      },
+      {
+        number: 4,
+        theme: "Espaços fechados",
+        words: ["teatro", "cinema", "museu", "galeria"],
+      },
+    ],
+    startingBoard: [
+      "guitarra",
+      "parque",
+      "trompete",
+      "museu",
+      "violão",
+      "cinema",
+      "flauta",
+      "praça",
+      "teatro",
+      "baixo",
+      "jardim",
+      "clarinete",
+      "galeria",
+      "campo",
+      "saxofone",
+      "violino",
+    ],
+  },
 };
 
 export const useData = () => {
