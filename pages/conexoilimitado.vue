@@ -55,7 +55,7 @@
       <div class="flex w-full items-center justify-between">
         <select class="select select-xs select-bordered text-black" @change="selectGameData">
           <option disabled selected>1/10/2023</option>
-          <option v-for="(value, key) in filteredData(0, 45)" :key="key">{{ keyToDate(Number(key)) }}</option>
+          <option v-for="(value, key) in filteredData(0, 46)" :key="key">{{ keyToDate(Number(key)) }}</option>
         </select>
         <!-- <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p> -->
         <p class="text-semibold p-2">
