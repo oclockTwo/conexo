@@ -91,23 +91,6 @@
       </div>
     </div>
     <!-- 广告start -->
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8993913594775765"
-      crossorigin="anonymous"
-    ></script>
-    <!-- conexo main -->
-    <ins
-      class="adsbygoogle"
-      style="display: block"
-      data-ad-client="ca-pub-8993913594775765"
-      data-ad-slot="6292408192"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    ></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
     <!-- 广告end -->
   </div>
