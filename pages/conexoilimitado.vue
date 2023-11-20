@@ -53,9 +53,14 @@
       ref="cells"
     >
       <div class="flex w-full items-center justify-between">
-        <select class="select select-xs select-bordered text-black" @change="selectGameData">
+        <select
+          class="select select-xs select-bordered text-black"
+          @change="selectGameData"
+        >
           <option disabled selected>1/10/2023</option>
-          <option v-for="(value, key) in filteredData(0, 49)" :key="key">{{ keyToDate(Number(key)) }}</option>
+          <option v-for="(value, key) in filteredData(0, 49)" :key="key">
+            {{ keyToDate(Number(key)) }}
+          </option>
         </select>
         <!-- <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p> -->
         <p class="text-semibold p-2">
@@ -84,6 +89,27 @@
           <p>{{ item.word }}</p>
         </div>
       </div>
+
+      <!-- 广告start -->
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8993913594775765"
+        crossorigin="anonymous"
+      ></script>
+      <!-- conexo main -->
+      <ins
+        class="adsbygoogle"
+        style="display: block"
+        data-ad-client="ca-pub-8993913594775765"
+        data-ad-slot="6292408192"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      ></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+
+      <!-- 广告end -->
     </div>
   </div>
 
@@ -336,7 +362,7 @@ onMounted(() => {
 
 const selectedWords = [];
 const selectedTarget = [];
-let randomNumber = 0
+let randomNumber = 0;
 
 const groupColor = ref({
   1: "bg-red-500",
@@ -404,7 +430,7 @@ function keyToDate(key) {
 
 function dateToKey(dateString) {
   // 先将输入的日期字符串从DD/MM/YYYY格式转换为Date对象
-  const parts = dateString.split('/');
+  const parts = dateString.split("/");
   const day = parseInt(parts[0], 10);
   const month = parseInt(parts[1], 10) - 1; // 月份是从0开始的
   const year = parseInt(parts[2], 10);
