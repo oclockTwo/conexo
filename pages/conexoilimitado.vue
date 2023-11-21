@@ -62,7 +62,7 @@
             {{ keyToDate(Number(key)) }}
           </option>
         </select>
-        <!-- <p class="text-semibold p-2 mr-2">Conexo Jogo Ilimitado</p> -->
+        
         <p class="text-semibold p-2">
           TENTATIVAS: {{ localData.attempts.length }}
         </p>
@@ -83,15 +83,17 @@
       <div
         v-for="item in localData.items"
         :key="item.id"
-        class="leading-6 font-semibold w-1/4 p-1"
+        class="leading-6 font-bold w-1/4 p-1"
       >
         <div class="cell-normal" @click="clickCell(item, $event.target)">
-          <p>{{ item.word }}</p>
+          {{ item.word }}
         </div>
       </div>
     </div>
     <!-- 广告start -->
-
+    <!-- <div class="max-w-[400px] mx-auto">
+      <Adsbygoogle />
+    </div> -->
     <!-- 广告end -->
   </div>
 

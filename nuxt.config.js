@@ -2,8 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss', 'nuxt-simple-sitemap', '@nuxtjs/robots'
+    '@nuxtjs/tailwindcss', 'nuxt-simple-sitemap', '@nuxtjs/robots', '@nuxtjs/google-adsense'
   ],
+  googleAdsense: {
+    id: 'ca-pub-8993913594775765'
+  },
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
   ],
