@@ -91,7 +91,7 @@
       </div>
     </div>
     <!-- 广告start -->
-    <div class="absolute bottom-0 inset-x-0 mx-auto mt-20 min-w-[320px] max-w-[970px] h-[40p]">
+    <div class="absolute bottom-0 inset-x-0 mx-auto mt-20 min-w-[320px] max-w-[970px] h-[500px]">
       <Adsbygoogle
         ad-slot="6292408192"
         ad-format="auto"
