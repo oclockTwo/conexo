@@ -91,9 +91,9 @@
       </div>
     </div>
     <!-- 广告start -->
-    <!-- <div class="max-w-[400px] mx-auto">
-      <Adsbygoogle />
-    </div> -->
+    <div class="max-w-[400px] mx-auto mt-20">
+      <Adsbygoogle ad-slot="6292408192" ad-format="auto" />
+    </div>
     <!-- 广告end -->
   </div>
 
