@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-slate-900 overflow-auto">
+  <div class="h-screen bg-slate-900 overflow-auto relative">
     <div
       class="flex w-full sm:max-w-[520px] px-4 py-2 mx-auto text-white items-center justify-between"
     >
@@ -62,7 +62,7 @@
             {{ keyToDate(Number(key)) }}
           </option>
         </select>
-        
+
         <p class="text-semibold p-2">
           TENTATIVAS: {{ localData.attempts.length }}
         </p>
@@ -91,8 +91,12 @@
       </div>
     </div>
     <!-- 广告start -->
-    <div class="max-w-[400px] mx-auto mt-20">
-      <Adsbygoogle ad-slot="6292408192" ad-format="auto" />
+    <div class="absolute bottom-0 max-w-[400px] mx-auto text-white">
+      <Adsbygoogle
+        ad-slot="6292408192"
+        ad-format="auto"
+        full-width-responsive="true"
+      />
     </div>
     <!-- 广告end -->
   </div>
