@@ -121,7 +121,7 @@
 
     <!-- 广告start -->
     <div class="max-w-[400px] mx-auto mt-20">
-      <Adsbygoogle ad-slot="6292408192" ad-format="auto" full-width-responsive="true" />
+      <Adsbygoogle ad-slot="6292408192" ad-format="auto" ad-style="display:block;min-width:320px;max-width:970px;width:100%;height:50px" />
     </div>
     <!-- 广告end -->
 

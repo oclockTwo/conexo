@@ -91,7 +91,7 @@
       </div>
     </div>
     <!-- 广告start -->
-    <div class="absolute bottom-0 max-w-[400px] mx-auto text-white">
+    <div class="max-w-[400px] mx-auto">
       <Adsbygoogle
         ad-slot="6292408192"
         ad-format="auto"
