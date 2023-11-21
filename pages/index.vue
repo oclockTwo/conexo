@@ -120,7 +120,7 @@
     </div>
 
     <!-- 广告start -->
-    <div class="mx-auto mt-20 sm:mt-60 min-w-[320px] max-w-[970px] h-[50px] bg-red-400">
+    <div class="mx-auto mt-20 sm:mt-60 min-w-[320px] max-w-[970px] h-[50px]">
       <Adsbygoogle ad-slot="6292408192" ad-format="auto" />
     </div>
     <!-- 广告end -->
