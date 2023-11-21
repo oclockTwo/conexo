@@ -83,7 +83,7 @@
       <div
         v-for="item in localData.items"
         :key="item.id"
-        class="leading-6 font-bold w-1/4 p-1"
+        class="w-1/4 p-1 text-sm"
       >
         <div class="cell-normal" @click="clickCell(item, $event.target)">
           {{ item.word }}
