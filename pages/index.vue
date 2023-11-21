@@ -36,7 +36,7 @@
     </div>
   </main>
   <!--  游戏区 -->
-  <div class="h-screen bg-slate-900 overflow-auto" id="daily">
+  <div class="h-screen bg-slate-900 overflow-auto relative" id="daily">
     <div
       class="flex w-full sm:max-w-[520px] px-4 mx-auto text-white items-center justify-between"
     >
@@ -120,7 +120,7 @@
     </div>
 
     <!-- 广告start -->
-    <div class="mx-auto mt-20 min-w-[320px] max-w-[970px] h-[50px]">
+    <div class="mx-auto mt-20 sm:mt-60 min-w-[320px] max-w-[970px] h-[50px] bg-red-400">
       <Adsbygoogle ad-slot="6292408192" ad-format="auto" />
     </div>
     <!-- 广告end -->
