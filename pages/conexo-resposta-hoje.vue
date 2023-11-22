@@ -58,9 +58,8 @@
       <div class="flex justify-center my-10 text-xl leading-7 text-neutral-800">
         <a
           title="Conexo dica"
-          href="/conexo-dica-hoje"
+          href="#hint"
           class="leading-7 cursor-pointer"
-          target="_blank"
           ><button
             class="p-2 text-lg leading-none text-center text-gray-700 normal-case bg-amber-300 bg-none rounded-3xl"
           >
@@ -87,9 +86,8 @@
       <div class="flex justify-center my-10 text-xl leading-7 text-neutral-800">
         <a
           title="Conexo dica"
-          href="/conexo-dica-hoje"
+          href="#hint"
           class="leading-7 cursor-pointer"
-          target="_blank"
           ><button
             class="p-2 text-lg leading-none text-center text-gray-700 normal-case bg-amber-300 bg-none rounded-3xl"
           >
@@ -108,7 +106,7 @@
           de hoje, PARE DE ROLAR porque temos os spoilers para as respostas do
           Conexo de hoje.
         </p>
-        <h3 class="mb-2 text-base font-bold leading-6">
+        <h3 class="mb-2 text-base font-bold leading-6" id="hint">
           Dica de resposta do Conexo
         </h3>
         <p class="mb-4 break-words text-lg">
