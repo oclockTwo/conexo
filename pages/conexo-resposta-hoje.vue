@@ -115,12 +115,12 @@
           Quer resolver o jogo Conexo de hoje por conta própria para criar
           quatro grupos de quatro? Veja se alguma dessas dicas ajuda!
         </p>
-        <div class="flex justify-evenly mb-4">
+        <div class="flex justify-evenly mb-4 gap-2">
           <a href="/">
-            <button class="btn btn-primary">Jogar Conexo</button>
+            <button class="btn btn-primary btn-md">Jogar Conexo</button>
           </a>
           <a href="/conexoilimitado">
-            <button class="btn btn-accent">Jogar Conexo Ilimitado</button>
+            <button class="btn btn-accent btn-md">Jogar Conexo Ilimitado</button>
           </a>
         </div>
         <ol class="my-4 list-decimal pl-10 text-lg">
