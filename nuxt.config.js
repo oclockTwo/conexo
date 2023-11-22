@@ -2,21 +2,22 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss', 'nuxt-simple-sitemap', '@nuxtjs/robots', '@nuxtjs/google-adsense'
+    "@nuxtjs/tailwindcss",
+    "nuxt-simple-sitemap",
+    "@nuxtjs/robots",
+    "@nuxtjs/google-adsense",
   ],
   googleAdsense: {
-    id: 'ca-pub-8993913594775765'
+    id: "ca-pub-8993913594775765",
   },
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css'
-  ],
+  css: ["@fortawesome/fontawesome-svg-core/styles.css"],
   app: {
     head: {
       htmlAttrs: {
         lang: "pt-br",
       },
-      charset: 'utf-8',
-      viewport: 'width=device-width, initial-scale=1',
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
       meta: [
         {
           name: "robots",
@@ -45,8 +46,18 @@ export default defineNuxtConfig({
         },
         {
           defer: true,
-          'data-domain': "conexojogo.com",
-          src:"https://plausible.io/js/script.js",
+          "data-domain": "conexojogo.com",
+          src: "https://plausible.io/js/script.js",
+        },
+        {
+          type: "text/javascript",
+          children: `
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "judst74vd5");
+          `,
         },
       ],
     },
@@ -55,7 +66,7 @@ export default defineNuxtConfig({
     url: "https://conexojogo.com",
   },
   robots: {
-    UserAgent: '*',
-    Disallow: ''
+    UserAgent: "*",
+    Disallow: "",
   },
-})
+});
