@@ -1,6 +1,6 @@
 <template>
   <main class="h-screen bg-gray-200 overflow-auto">
-    <div class="flex flex-col mx-auto items-center mt-60">
+    <div class="flex flex-col mx-auto items-center mt-40">
       <img src="/logo.png" alt="conexo log" class="w-[50px] h-[50px]" />
       <h1 class="mt-5 text-2xl font-extrabold">CONEXO</h1>
       <p class="px-5 my-5 mx-0 text-center" style="max-width: 300px">
@@ -32,7 +32,21 @@
             </button>
           </NuxtLink>
         </div>
+
+        <div
+          class="mb-5 mt-20 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
+        >
+          <div class="pl-1 text-lg font-extrabold">2048</div>
+          <NuxtLink to="/2048" class="cursor-pointer" target="_blank"
+            ><button
+              class="items-center bg-orange-500 px-5 py-2 text-center text-base rounded-lg"
+            >
+              Jogar
+            </button>
+          </NuxtLink>
+        </div>
       </div>
+      <div id="2048"></div>
     </div>
   </main>
   <!--  游戏区 -->
@@ -124,7 +138,6 @@
       <Adsbygoogle ad-slot="6292408192" ad-format="auto" />
     </div>
     <!-- 广告end -->
-
   </div>
 
   <!-- 引入info弹出框 -->
@@ -374,8 +387,6 @@
       </p>
     </div>
   </section>
-
-  <!-- <iframe src="https://huggingface.co/spaces/radames/edit-video-by-editing-text" class="text-white">xxx</iframe> -->
 
   <!-- 页脚 -->
   <Footer />
