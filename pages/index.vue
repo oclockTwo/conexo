@@ -33,7 +33,7 @@
           </NuxtLink>
         </div>
 
-        <div
+        <!-- <div
           class="mb-5 mt-20 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
         >
           <div class="pl-1 text-lg font-extrabold">2048</div>
@@ -44,9 +44,8 @@
               Jogar
             </button>
           </NuxtLink>
-        </div>
+        </div> -->
       </div>
-      <div id="2048"></div>
     </div>
   </main>
   <!--  游戏区 -->
