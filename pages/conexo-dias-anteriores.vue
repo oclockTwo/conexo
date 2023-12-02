@@ -59,6 +59,25 @@
         <div class="collapse bg-base-200">
           <input type="checkbox" />
           <div class="collapse-title text-xl text-center font-medium">
+            <h3>Arquivo de Respostas - 12/2023</h3>
+          </div>
+          <div class="collapse-content">
+            <div v-for="(value, key) in filteredData(61, 61)" :key="key">
+              <p class="my-5 text-2xl leading-9">
+                {{ keyToDate(Number(key)) }}
+              </p>
+              <ul v-for="(item, index) in value.groups" :key="index">
+                <li class="pl-10 my-2">
+                  {{ emojiText[index] }} <strong>{{ item.theme }}:</strong>
+                  {{ item.words.join(", ") }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="collapse bg-base-200">
+          <input type="checkbox" />
+          <div class="collapse-title text-xl text-center font-medium">
             <h3>Arquivo de Respostas - 11/2023</h3>
           </div>
           <div class="collapse-content">
