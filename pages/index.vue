@@ -8,7 +8,7 @@
       </p>
       <div>
         <div
-          class="my-5 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg items-center"
+          class="my-5 flex justify-between border border-white bg-slate-800 p-2 text-white rounded-lg items-center"
         >
           <div class="pl-1 text-lg font-extrabold">Jogo diário</div>
           <div class="font-normal">{{ today }}</div>
@@ -32,19 +32,24 @@
             </button>
           </NuxtLink>
         </div>
-
-        <!-- <div
-          class="mb-5 mt-20 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
+        <div class="flex flex-col items-center justify-center w-full">
+          <img src="/images/movixa.png" alt="movixa jogo" class="w-[100px]" />
+          <p class="text-3xl font-bold">Movixa</p>
+          <p class="font-semibold">Um jogo mais divertido que termo e conexo</p>
+        </div>
+        <div
+          class="mb-5 mt-6 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
         >
-          <div class="pl-1 text-lg font-extrabold">2048</div>
-          <NuxtLink to="/2048" class="cursor-pointer" target="_blank"
+          <div class="pl-1 text-lg font-extrabold">Movixa</div>
+          <div class="font-normal">{{ today }}</div>
+          <a href="https://movixa.com" class="cursor-pointer" target="_blank"
             ><button
               class="items-center bg-orange-500 px-5 py-2 text-center text-base rounded-lg"
             >
               Jogar
             </button>
-          </NuxtLink>
-        </div> -->
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -608,7 +613,7 @@ async function copyToClipboard(target) {
 }
 
 useHead({
-  title: "Conexo Jogo ",
+  title: "Conexo Jogo",
   meta: [
     {
       name: "description",
