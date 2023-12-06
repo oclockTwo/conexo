@@ -117,8 +117,8 @@
           <a href="/">
             <button class="btn btn-primary btn-md">Jogar Conexo</button>
           </a>
-          <a href="/conexoilimitado">
-            <button class="btn btn-accent btn-md">Jogar Conexo Ilimitado</button>
+          <a href="https://movixa.com">
+            <button class="btn btn-accent btn-md">Jogar Movixa</button>
           </a>
         </div>
         <ol class="my-4 list-decimal pl-10 text-lg">
@@ -152,8 +152,8 @@
           <a href="/">
             <button class="btn btn-primary">Jogar Conexo</button>
           </a>
-          <a href="/conexoilimitado">
-            <button class="btn btn-accent">Jogar Conexo Ilimitado</button>
+          <a href="https://movixa.com">
+            <button class="btn btn-accent">Jogar Movixa</button>
           </a>
         </div>
         <h3 class="mb-2 text-base font-bold leading-6">{{ today }}</h3>
