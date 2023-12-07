@@ -33,14 +33,14 @@
           </NuxtLink>
         </div>
         <div class="flex flex-col items-center justify-center w-full">
-          <img src="/images/movixa.png" alt="movixa jogo" class="w-[100px]" />
+          <img src="/images/movixa.png" alt="movixa jogo" class="w-[80px]" />
           <p class="text-3xl font-bold">Movixa</p>
-          <p class="font-semibold">Um jogo mais divertido que termo e conexo</p>
+          <p class="font-semibold">Movixa: Uma versão atualizada do termo e do conexo, experimente?</p>
         </div>
         <div
           class="mb-5 mt-6 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
         >
-          <div class="pl-1 text-lg font-extrabold">Movixa</div>
+          <div class="pl-1 text-lg font-extrabold">Movixa diário</div>
           <div class="font-normal">{{ today }}</div>
           <a href="https://movixa.com" class="cursor-pointer" target="_blank"
             ><button
