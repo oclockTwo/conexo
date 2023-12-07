@@ -56,10 +56,7 @@
         nossa página Conexo dica abaixo para revelar as dicas aos poucos.
       </p>
       <div class="flex justify-center my-10 text-xl leading-7 text-neutral-800">
-        <a
-          title="Conexo dica"
-          href="#hint"
-          class="leading-7 cursor-pointer"
+        <a title="Conexo dica" href="#hint" class="leading-7 cursor-pointer"
           ><button
             class="p-2 text-lg leading-none text-center text-gray-700 normal-case bg-amber-300 bg-none rounded-3xl"
           >
@@ -84,10 +81,7 @@
         </p>
       </div>
       <div class="flex justify-center my-10 text-xl leading-7 text-neutral-800">
-        <a
-          title="Conexo dica"
-          href="#hint"
-          class="leading-7 cursor-pointer"
+        <a title="Conexo dica" href="#hint" class="leading-7 cursor-pointer"
           ><button
             class="p-2 text-lg leading-none text-center text-gray-700 normal-case bg-amber-300 bg-none rounded-3xl"
           >
@@ -135,6 +129,16 @@
             🔵 Grupo Azul<br class="text-neutral-800" />{{ theme[3] }}.
           </li>
         </ol>
+        <p class="text-zinc-400">
+          Olá, gostaria de recomendar um novo jogo para você:
+          <a
+            href="https://movixa.com"
+            class="cursor-pointer text-red-600"
+            target="_blank"
+            >jogo Movixa</a
+          >, onde você combina as palavras corretas movendo as letras de lugar.
+          Acho muito interessante e espero que você goste.
+        </p>
       </div>
       <img
         loading="lazy"
@@ -148,6 +152,7 @@
           Quer saber as respostas e grupos para o jogo diário Conexo? Nós temos
           eles aqui.
         </p>
+
         <div class="flex justify-evenly mb-4">
           <a href="/">
             <button class="btn btn-primary">Jogar Conexo</button>
@@ -163,6 +168,16 @@
           <li class="text-left uppercase">🟠 {{ words[2] }}</li>
           <li class="text-left uppercase">🔵 {{ words[3] }}</li>
         </ol>
+        <p class="text-zinc-400">
+          Olá, gostaria de recomendar um novo jogo para você:
+          <a
+            href="https://movixa.com"
+            class="cursor-pointer text-red-600"
+            target="_blank"
+            >jogo Movixa</a
+          >, onde você combina as palavras corretas movendo as letras de lugar.
+          Acho muito interessante e espero que você goste.
+        </p>
       </div>
       <div class="text-xl leading-7 text-neutral-800">
         <h2 class="mx-0 mb-5 mt-0 text-2xl leading-9">Como eu jogo Conexo?</h2>
