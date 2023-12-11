@@ -50,6 +50,11 @@ export default defineNuxtConfig({
           src: "https://plausible.io/js/script.js",
         },
         {
+          async: true,
+          "data-website-id": "e0db6583-6591-4f02-a616-073dc5dbf832",
+          src: "https://us.umami.is/script.js",
+        },
+        {
           type: "text/javascript",
           innerHTML: `
           (function(c,l,a,r,i,t,y){
