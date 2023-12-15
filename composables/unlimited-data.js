@@ -3153,7 +3153,7 @@ const data = {
     groups: [
       {
         number: 1,
-        theme: 'Dona ___ personagens fictícias',
+        theme: "Dona ___ personagens fictícias",
         words: ["benta", "flor", "xepa", "nenê"],
       },
       {
@@ -3399,6 +3399,90 @@ const data = {
       "espetinho",
       "orquestra",
       "salsicha",
+    ],
+  },
+  81: {
+    groups: [
+      {
+        number: 1,
+        theme: "Refrigerantes",
+        words: ["coca", "pepsi", "fanta", "jesus"],
+      },
+      {
+        number: 2,
+        theme: "Frutas",
+        words: ["guaraná", "carambola", "pitaia", "maracujá"],
+      },
+      {
+        number: 3,
+        theme: "Figuras religiosas",
+        words: ["buda", "maomé", "moisés", "krishna"],
+      },
+      {
+        number: 4,
+        theme: "Pé na(o) ___",
+        words: ["jaca", "freio", "tábua", "cova"],
+      },
+    ],
+    startingBoard: [
+      "cova",
+      "maracujá",
+      "jaca",
+      "maomé",
+      "buda",
+      "jesus",
+      "moisés",
+      "guaraná",
+      "fanta",
+      "pepsi",
+      "tábua",
+      "freio",
+      "carambola",
+      "coca",
+      "pitaia",
+      "krishna",
+    ],
+  },
+  82: {
+    groups: [
+      {
+        number: 1,
+        theme: "Produção audiovisual",
+        words: ["tomada", "direção", "roteiro", "montagem"],
+      },
+      {
+        number: 2,
+        theme: "Fontes de energia",
+        words: ["bateria", "pilha", "gerador", "carregador"],
+      },
+      {
+        number: 3,
+        theme: "Instrumentos musicais",
+        words: ["agogô", "pandeiro", "tambor", "cuíca"],
+      },
+      {
+        number: 4,
+        theme: "Sistema auditivo",
+        words: ["tímpano", "martelo", "bigorna", "ouvido"],
+      },
+    ],
+    startingBoard: [
+      "bigorna",
+      "pandeiro",
+      "tímpano",
+      "cuíca",
+      "agogô",
+      "ouvido",
+      "bateria",
+      "direção",
+      "carregador",
+      "pilha",
+      "martelo",
+      "montagem",
+      "roteiro",
+      "gerador",
+      "tomada",
+      "tambor",
     ],
   },
 };
