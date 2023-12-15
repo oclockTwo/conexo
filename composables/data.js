@@ -591,8 +591,8 @@ const data = {
     groups: [
       {
         number: 1,
-        theme: '"Dona ___',
-        words: [' personagens fictícias"', "benta", "flor", "xepa", "nenê"],
+        theme: '"Dona___personagens fictícias',
+        words: ["benta", "flor", "xepa", "nenê"],
       },
       {
         number: 2,
@@ -612,7 +612,6 @@ const data = {
     ],
     startingBoard: [
       "salgada",
-      ' personagens fictícias"',
       "termal",
       "mineral",
       "benta",
