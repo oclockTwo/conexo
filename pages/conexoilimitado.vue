@@ -89,11 +89,11 @@
           {{ item.word }}
         </div>
       </div>
-      <!-- <p class="text-lg mt-4 text-center text-zinc-400 hover:text-red-600">
+      <p class="text-lg mt-4 text-center text-zinc-400 hover:text-red-600">
         <a href="https://movixa.com" class="cursor-pointer" target="_blank"
-          >Movixa: Uma versão atualizada do termo e do conexo, experimente?</a
+          >Movixa: Uma nova maneira de brincar com palavras soletradas, experimente?</a
         >
-      </p> -->
+      </p>
     </div>
     <!-- 广告start -->
     <div class="mx-auto mt-20 sm:mt-60 min-w-[320px] max-w-[970px] h-[50px]">

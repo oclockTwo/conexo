@@ -35,7 +35,7 @@
         <div class="flex flex-col items-center justify-center w-full">
           <img src="/images/movixa.png" alt="movixa jogo" class="w-[80px]" />
           <p class="text-3xl font-bold">Movixa</p>
-          <p class="font-semibold">Movixa: Uma versão atualizada do termo e do conexo, experimente?</p>
+          <p class="font-semibold">Movixa: Uma nova maneira de brincar com palavras soletradas, experimente?</p>
         </div>
         <div
           class="mb-5 mt-6 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
