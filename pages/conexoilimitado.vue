@@ -58,7 +58,7 @@
           @change="selectGameData"
         >
           <option disabled selected>1/10/2023</option>
-          <option v-for="(value, key) in filteredData(0, 83)" :key="key">
+          <option v-for="(value, key) in filteredData(0, 84)" :key="key">
             {{ keyToDate(Number(key)) }}
           </option>
         </select>
@@ -91,7 +91,7 @@
       </div>
       <p class="text-lg mt-4 text-center text-zinc-400 hover:text-red-600">
         <a href="https://movixa.com" class="cursor-pointer" target="_blank"
-          >Movixa: Uma nova maneira de brincar com palavras soletradas, experimente?</a
+          >Movixa: Uma nova maneira de brincar com palavras soletradas, experimente?g</a
         >
       </p>
     </div>
