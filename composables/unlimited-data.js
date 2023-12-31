@@ -3863,6 +3863,90 @@ const data = {
       "charrete",
     ],
   },
+  92: {
+    groups: [
+      {
+        number: 1,
+        theme: "Genética",
+        words: ["fenótipo", "genótipo", "cariótipo", "mutação"],
+      },
+      {
+        number: 2,
+        theme: "Tipos de programas de TV",
+        words: ["série", "reality", "noticiário", "variedades"],
+      },
+      {
+        number: 3,
+        theme: "Arquitetura",
+        words: ["maquete", "planta", "desenho", "projeto"],
+      },
+      {
+        number: 4,
+        theme: "Amostras",
+        words: ["palinha", "degustação", "excerto", "protótipo"],
+      },
+    ],
+    startingBoard: [
+      "desenho",
+      "planta",
+      "mutação",
+      "série",
+      "genótipo",
+      "degustação",
+      "excerto",
+      "variedades",
+      "reality",
+      "noticiário",
+      "projeto",
+      "maquete",
+      "palinha",
+      "fenótipo",
+      "protótipo",
+      "cariótipo",
+    ],
+  },
+  93: {
+    groups: [
+      {
+        number: 1,
+        theme: "Músicas do Emicida",
+        words: ["principia", "amarelo", "mãe", "triunfo"],
+      },
+      {
+        number: 2,
+        theme: "Ato de vencer",
+        words: ["conquista", "êxito", "sucesso", "vitória"],
+      },
+      {
+        number: 3,
+        theme: "Membros da família",
+        words: ["irmã", "tia", "avó", "sobrinha"],
+      },
+      {
+        number: 4,
+        theme: "Para proteger da chuva",
+        words: ["sombrinha", "capa", "galocha", "capuz"],
+      },
+    ],
+    startingBoard: [
+      "triunfo",
+      "vitória",
+      "sobrinha",
+      "tia",
+      "êxito",
+      "irmã",
+      "capa",
+      "sucesso",
+      "sombrinha",
+      "galocha",
+      "principia",
+      "avó",
+      "mãe",
+      "conquista",
+      "amarelo",
+      "capuz",
+    ],
+  },
 };
 
 export const useUnlimitedData = () => {
