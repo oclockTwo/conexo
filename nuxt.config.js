@@ -50,11 +50,6 @@ export default defineNuxtConfig({
           src: "https://plausible.io/js/script.js",
         },
         {
-          async: true,
-          "data-website-id": "8b45fdfc-23c3-4e57-8bcf-0362948c46cc",
-          src: "https://umami-six-theta.vercel.app/script.js",
-        },
-        {
           type: "text/javascript",
           innerHTML: `
           (function(c,l,a,r,i,t,y){
