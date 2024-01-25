@@ -58,7 +58,7 @@
           @change="selectGameData"
         >
           <option disabled selected>1/10/2023</option>
-          <option v-for="(value, key) in filteredData(0, 110)" :key="key">
+          <option v-for="(value, key) in filteredData(0, 112)" :key="key">
             {{ keyToDate(Number(key)) }}
           </option>
         </select>
