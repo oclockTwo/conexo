@@ -44,11 +44,11 @@ export default defineNuxtConfig({
           src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8993913594775765",
           crossorigin: "anonymous",
         },
-        {
-          defer: true,
-          "data-domain": "conexojogo.com",
-          src: "https://plausible.io/js/script.js",
-        },
+        // {
+        //   defer: true,
+        //   "data-domain": "conexojogo.com",
+        //   src: "https://plausible.io/js/script.js",
+        // },
         {
           defer: true,
           "data-domain": "conexojogo.com",
