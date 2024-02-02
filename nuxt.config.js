@@ -50,6 +50,11 @@ export default defineNuxtConfig({
           src: "https://plausible.io/js/script.js",
         },
         {
+          defer: true,
+          "data-domain": "conexojogo.com",
+          src: "https://yearbookai.online/js/script.js",
+        },
+        {
           type: "text/javascript",
           innerHTML: `
           (function(c,l,a,r,i,t,y){
