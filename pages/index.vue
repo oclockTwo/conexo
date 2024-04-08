@@ -613,12 +613,12 @@ async function copyToClipboard(target) {
 }
 
 useHead({
-  title: "Conexo Jogo",
+  title: "Conexo Jogo - conexo hoje",
   meta: [
     {
       name: "description",
       content:
-        "Jogo de palavras onde o objetivo é formar 4 grupos de 4 palavras que tenham algo em comum",
+        "ConeoxJogo de palavras onde o objetivo é formar 4 grupos de 4 palavras que tenham algo em comum",
     },
   ],
   link: [
