@@ -33,20 +33,30 @@
           </NuxtLink>
         </div>
         <div class="flex flex-col items-center justify-center w-full">
-          <img src="/images/movixa.png" alt="movixa jogo" class="w-[80px]" />
-          <p class="text-3xl font-bold">Movixa</p>
-          <p class="font-semibold">Movixa: Uma nova maneira de brincar com palavras soletradas, experimente?</p>
+          <img
+            src="/images/illu.png"
+            alt="Face para Muitos"
+            class="w-[80px]"
+          />
+          <p class="text-3xl font-bold">Face para Muitos</p>
+          <p class="font-semibold">
+            Face para Muitos: Transforme sua selfie em diversos estilos, como
+            jogo de vídeo PS2, emoji, 3D, entre outros.
+          </p>
         </div>
         <div
           class="mb-5 mt-6 flex gap-4 border border-white bg-slate-800 p-2 text-white rounded-lg justify-between items-center"
         >
-          <div class="pl-1 text-lg font-extrabold">Movixa diário</div>
-          <div class="font-normal">{{ today }}</div>
-          <a href="https://movixa.com" class="cursor-pointer" target="_blank"
+          <div class="pl-1 text-lg font-extrabold">Face para Muitos</div>
+          <!-- <div class="font-normal">{{ today }}</div> -->
+          <a
+            href="https://facetomany.com"
+            class="cursor-pointer"
+            target="_blank"
             ><button
               class="items-center bg-orange-500 px-5 py-2 text-center text-base rounded-lg"
             >
-              Jogar
+              tentar
             </button>
           </a>
         </div>
