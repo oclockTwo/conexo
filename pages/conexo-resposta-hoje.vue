@@ -108,11 +108,31 @@
           quatro grupos de quatro? Veja se alguma dessas dicas ajuda!
         </p>
         <div class="flex justify-evenly mb-4 gap-2">
-          <a href="/">
-            <button class="btn btn-primary btn-md">Jogar Conexo</button>
+          <a href="https://facetomany.com">
+            <button class="btn btn-primary btn-md">
+              tentar Face para Muitos
+            </button>
           </a>
-          <a href="https://movixa.com">
-            <button class="btn btn-accent btn-md">Jogar Movixa</button>
+          <a href="https://facetomany.com">
+            <button class="btn btn-accent btn-md">
+              tentar Face para Muitos
+            </button>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a href="https://facetomany.com">
+            <img
+              src="/images/main.png"
+              alt="Face para Muitos"
+              class="w-[300px]"
+            />
+          </a>
+          <a href="https://facetomany.com">
+            <img
+              src="/images/main2.png"
+              alt="Face para Muitos"
+              class="w-[300px]"
+            />
           </a>
         </div>
         <ol class="my-4 list-decimal pl-10 text-lg">
@@ -132,10 +152,10 @@
         <p class="text-zinc-400">
           Olá, gostaria de recomendar um novo jogo para você:
           <a
-            href="https://movixa.com"
+            href="https://facetomany.com"
             class="cursor-pointer text-red-600"
             target="_blank"
-            >jogo Movixa</a
+            >tentar Face para Muitos</a
           >, onde você combina as palavras corretas movendo as letras de lugar.
           Acho muito interessante e espero que você goste.
         </p>
@@ -154,11 +174,27 @@
         </p>
 
         <div class="flex justify-evenly mb-4">
-          <a href="/">
-            <button class="btn btn-primary">Jogar Conexo</button>
+          <a href="https://facetomany.com">
+            <button class="btn btn-primary">tentar Face para Muitos</button>
           </a>
-          <a href="https://movixa.com">
-            <button class="btn btn-accent">Jogar Movixa</button>
+          <a href="https://facetomany.com">
+            <button class="btn btn-accent">tentar Face para Muitos</button>
+          </a>
+        </div>
+        <div class="flex justify-center">
+          <a href="https://facetomany.com">
+            <img
+              src="/images/main.png"
+              alt="Face para Muitos"
+              class="w-[300px]"
+            />
+          </a>
+          <a href="https://facetomany.com">
+            <img
+              src="/images/main2.png"
+              alt="Face para Muitos"
+              class="w-[300px]"
+            />
           </a>
         </div>
         <h3 class="mb-2 text-base font-bold leading-6">{{ today }}</h3>
@@ -171,10 +207,10 @@
         <p class="text-zinc-400">
           Olá, gostaria de recomendar um novo jogo para você:
           <a
-            href="https://movixa.com"
+            href="https://facetomany.com"
             class="cursor-pointer text-red-600"
             target="_blank"
-            >jogo Movixa</a
+            >tentar Face para Muitos</a
           >, onde você combina as palavras corretas movendo as letras de lugar.
           Acho muito interessante e espero que você goste.
         </p>
