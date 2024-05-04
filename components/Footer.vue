@@ -19,6 +19,21 @@
     <font></font>
     <nav>
       <font></font>
+      <header class="footer-title">Friends</header>
+      <font></font>
+      <a class="link link-hover" href="https://outfitchanger.com">Outfit Anyone AI</a>
+      <font></font>
+      <a class="link link-hover" href="https://Fooocus.one"
+        >Fooocus</a
+      >
+      <font></font>
+      <a class="link link-hover" href="https://idmvton.com">IDM VTON</a>
+      <font></font>
+      <a class="link link-hover" href="https://storydiffusiongen.com">Story Diffusion</a>
+    </nav>
+    <font></font>
+    <nav>
+      <font></font>
       <header class="footer-title">Legal</header>
       <font></font>
       <a class="link link-hover" href="/terms/privacy-policy">Privacy Policy</a>
