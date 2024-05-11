@@ -55,6 +55,11 @@ export default defineNuxtConfig({
           src: "https://yearbookai.online/js/script.js",
         },
         {
+          defer: true,
+          "data-domain": "conexojogo.com",
+          src: "https://click.pageview.click/js/script.js",
+        },
+        {
           type: "text/javascript",
           innerHTML: `
           (function(c,l,a,r,i,t,y){
