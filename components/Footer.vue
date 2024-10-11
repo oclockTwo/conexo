@@ -23,7 +23,9 @@
       <font></font>
       <a class="link link-hover" href="https://outfitchanger.com">Outfit Anyone AI</a>
       <font></font>
-      <a class="link link-hover" href="https://Fooocus.one"
+      <a class="link link-hover" href="https://tomusic.ai/">Text to Music Generator</a>
+      <font></font>
+      <a class="link link-hover" href="https://fooocus.one"
         >Fooocus</a
       >
       <font></font>
