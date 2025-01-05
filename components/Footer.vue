@@ -21,6 +21,18 @@
       <font></font>
       <header class="footer-title">Friends</header>
       <font></font>
+      <a class="link link-hover" href="https://aisonggenerator.io"
+        >AI Music Generator</a
+      >
+      <font></font>
+      <a class="link link-hover" href="https://aimusicgen.ai"
+        >AI Music Generator</a
+      >
+      <font></font>
+      <a class="link link-hover" href="https://veo2.org"
+        >Veo 2</a
+      >
+      <font></font>
       <a class="link link-hover" href="https://outfitchanger.com">Outfit Anyone AI</a>
       <font></font>
       <a class="link link-hover" href="https://tomusic.ai/">Text to Music Generator</a>
@@ -29,9 +41,11 @@
         >Fooocus</a
       >
       <font></font>
-      <a class="link link-hover" href="https://idmvton.com">IDM VTON</a>
+      <a class="link link-hover" href="https://musick.ai/">AI Music Generator</a>
       <font></font>
-      <a class="link link-hover" href="https://storydiffusiongen.com">Story Diffusion</a>
+      <a class="link link-hover" href="https://fluximagegenerator.ai"
+        >Flux AI Image Generator</a
+      >
     </nav>
     <font></font>
     <nav>
