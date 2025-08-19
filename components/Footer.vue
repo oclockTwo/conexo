@@ -29,23 +29,16 @@
         >AI Music Generator</a
       >
       <font></font>
-      <a class="link link-hover" href="https://veo2.org"
-        >Veo 2</a
+      <a class="link link-hover" href="https://veo3.studio"
+        >Veo 3</a
       >
       <font></font>
       <a class="link link-hover" href="https://outfitchanger.com">Outfit Anyone AI</a>
-      <font></font>
-      <a class="link link-hover" href="https://tomusic.ai/">Text to Music Generator</a>
       <font></font>
       <a class="link link-hover" href="https://fooocus.one"
         >Fooocus</a
       >
       <font></font>
-      <a class="link link-hover" href="https://musick.ai/">AI Music Generator</a>
-      <font></font>
-      <a class="link link-hover" href="https://fluximagegenerator.ai"
-        >Flux AI Image Generator</a
-      >
     </nav>
     <font></font>
     <nav>
